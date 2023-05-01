@@ -1,0 +1,20 @@
+$('.featuresCards').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:true,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:3
+        },
+        1400:{
+            items:4
+        }
+    }
+})

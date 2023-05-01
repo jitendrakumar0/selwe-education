@@ -1,0 +1,996 @@
+// Hero Section
+.heroSection {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    & .innerSection {
+        & .contantSide {
+            & .card {
+                & .mainHeading {
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 63.3327px;
+                    line-height: 77px;
+                    color: #444444;
+                    margin-bottom: 38px;
+                    & span {
+                        color: #008cba;
+                    }
+                }
+                & .pera {
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 19.5979px;
+                    line-height: 24px;
+                    color: #282828;
+                    margin-bottom: 58px;
+                }
+                & .buttons {
+                    gap: 31px;
+                    margin-bottom: 47px;
+                }
+                & .socialGroup {
+                    & ul {
+                        & li {
+                            & .socialicon {
+                                height: 30.3px;
+                                width: 30.3px;
+                                transition: all 0.3s ease-in-out;
+                                &:hover {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Features Section
+.featuresSection {
+    padding-top: 71px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    background: #008cba;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: -120px;
+        background: url(../../assets/images/svg/S-Type-Shap.svg) no-repeat, center;
+        height: 337.94px;
+        width: 783.22px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -150px;
+        background: url(../../assets/images/svg/S-Type-Shap-white.svg) no-repeat, center;
+        height: 312.94px;
+        width: 280.22px;
+    }
+    & .innerSection {
+        & .featuresHeading {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 83.1813px;
+            line-height: 101px;
+            margin-bottom: 63px;
+        }
+        & .educationCard {
+            & .card {
+                & .card-body {
+                    border-radius: 75px;
+                    transition: all ease-in-out 0.3s;
+                    & .innerBody {
+                        min-height: 170px;
+                        & .cardImg {
+                            height: 75px;
+                        }
+                        & .cardTitle {
+                            font-family: "Inter";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 29.9116px;
+                            line-height: 36px;
+                            color: #ffffff;
+                        }
+                        & .cardSubTitle {
+                            font-family: "Inter";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16.7419px;
+                            line-height: 20px;
+                            color: #c7eaf2;
+                        }
+                    }
+                    &:hover {
+                        background: #33a3c8;
+                        box-shadow: 2px 2px 20px 0px #00000038;
+                    }
+                }
+            }
+        }
+        & .featuresCards {
+            & .owl-stage-outer {
+                padding: 0px;
+                & .owl-stage {
+                    padding: 1rem 0rem;
+                }
+            }
+            & .owl-dots {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                & .owl-dot {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 12px;
+                    opacity: 0.5;
+                    background-color: #fff;
+                    transition: all 0.3s;
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Resserch Section
+.resserchSection {
+    background: #f5f5f5;
+    & .innerFluid {
+        & .innersection {
+            & .searchCard {
+                & .card {
+                    min-height: 450px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 3px;
+                        top: 50%;
+                        background: url(../../assets/images/svg/trengalShap.svg) no-repeat, center;
+                        background-size: cover;
+                        width: 123.37px;
+                        height: 178.23px;
+                        transform: translate(-50%, -50%);
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: -3px;
+                        top: 50%;
+                        background: url(../../assets/images/svg/trengalShap.svg) no-repeat, center;
+                        background-size: cover;
+                        width: 123.37px;
+                        height: 178.23px;
+                        transform: translate(50%, -50%);
+                    }
+                    & .card-body {
+                        transition: all 0.3s ease-in-out;
+                        z-index: 2;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            z-index: -1;
+                            width: 0px;
+                            height: 100%;
+                            background: #008cba;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        & .innerBody {
+                            & .cardImg {
+                                height: 55px;
+                                margin-bottom: 35px;
+                                & img {
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            }
+                            & .cardTitle {
+                                color: #404345;
+                                font-size: 25px;
+                                line-height: normal;
+                                margin-bottom: 20px;
+                                transition: all 0.3s ease-in-out;
+                            }
+                            & .subContent {
+                                font-size: 18px;
+                                line-height: normal;
+                                color: #404345;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                        &:hover {
+                            box-shadow: 1px -1px 15px 2px #00000088;
+                            &::before {
+                                width: 100%;
+                            }
+                            & .cardTitle,
+                            & .subContent {
+                                color: #fff;
+                            }
+                            & .cardImg {
+                                & img {
+                                    filter: brightness(10);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:last-child {
+                    & .card {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Simplify Section
+.simplifySection {
+    margin-top: 158px;
+    & .innerSection {
+        & .simplifyHeading {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 93.8263px;
+            line-height: 114px;
+            color: #282828;
+            margin-bottom: 25px;
+            & span {
+                color: #008cba;
+            }
+        }
+        & .subHeading {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26.599px;
+            line-height: 32px;
+            color: #282828;
+        }
+        & .experiencesCard {
+            padding: 91px 0px 74px 0px;
+        }
+    }
+}
+
+// * @@@@@@@@@@@@@@@@@ [ Responsive BreckPoint ] @@@@@@@@@@@@@@@@@@@@@@
+@media screen and (max-width: 1599.98px) {
+    // Resserch Section
+    .resserchSection {
+        & .innerFluid {
+            & .innersection {
+                & .searchCard {
+                    & .card {
+                        &::before,
+                        &::after {
+                            width: 100px;
+                            height: 145.23px;
+                        }
+                        & .card-body {
+                            &::before {
+                            }
+                            & .innerBody {
+                                padding: 0px !important;
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                                & .cardTitle {
+                                }
+                                & .subContent {
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                }
+                                & .cardTitle,
+                                & .subContent {
+                                }
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:last-child {
+                        & .card {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1399.98px) {
+    // Hero Section
+    .heroSection {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        & .innerSection {
+            & .contantSide {
+                & .card {
+                    & .mainHeading {
+                        font-size: 50px;
+                        line-height: normal;
+                        margin-bottom: 30px;
+                    }
+                    & .pera {
+                        font-size: 18px;
+                        line-height: normal;
+                        margin-bottom: 50px;
+                    }
+                    & .buttons {
+                        gap: 31px;
+                        margin-bottom: 40px;
+                    }
+                    & .socialGroup {
+                        & ul {
+                            & li {
+                                & .socialicon {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // featuresSection
+    .featuresSection {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        margin-top: 80px;
+        &::before {
+        }
+        &::after {
+        }
+        & .innerSection {
+            & .featuresHeading {
+                font-size: 70px;
+                line-height: normal;
+                margin-bottom: 55px;
+            }
+            & .educationCard {
+                & .card {
+                    & .card-body {
+                        & .innerBody {
+                            min-height: 160px;
+                            & .cardImg {
+                                height: 70px;
+                            }
+                            & .cardTitle {
+                                font-size: 26px;
+                                line-height: normal;
+                            }
+                            & .cardSubTitle {
+                                font-size: 14px;
+                                line-height: normal;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .featuresCards {
+                & .owl-stage-outer {
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Resserch Section
+    .resserchSection {
+        & .innerFluid {
+            & .innersection {
+                & .searchCard {
+                    & .card {
+                        min-height: 400px;
+                        &::before,
+                        &::after {
+                        }
+                        & .card-body {
+                            &::before {
+                            }
+                            & .innerBody {
+                                padding: 0px !important;
+                                & .cardImg {
+                                    height: 50px;
+                                    margin-bottom: 30px;
+                                    & img {
+                                    }
+                                }
+                                & .cardTitle {
+                                    font-size: 22px;
+                                    margin-bottom: 18px;
+                                }
+                                & .subContent {
+                                    font-size: 16px;
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                }
+                                & .cardTitle,
+                                & .subContent {
+                                }
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:last-child {
+                        & .card {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    // Hero Section
+    .heroSection {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        & .innerSection {
+            & .contantSide {
+                & .card {
+                    & .mainHeading {
+                        font-size: 45px;
+                        margin-bottom: 25px;
+                    }
+                    & .pera {
+                        font-size: 16px;
+                        margin-bottom: 40px;
+                    }
+                    & .buttons {
+                        gap: 31px;
+                        margin-bottom: 30px;
+                    }
+                    & .socialGroup {
+                        & ul {
+                            & li {
+                                & .socialicon {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // featuresSection
+    .featuresSection {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        margin-top: 70px;
+        &::before {
+            top: -90px;
+            width: 500px;
+        }
+        &::after {
+            top: -180px;
+        }
+        & .innerSection {
+            & .featuresHeading {
+                font-size: 45px;
+                margin-bottom: 40px;
+            }
+            & .educationCard {
+                & .card {
+                    & .card-body {
+                        border-radius: 55px;
+                        & .innerBody {
+                            min-height: 140px;
+                            & .cardImg {
+                                height: 60px;
+                            }
+                            & .cardTitle {
+                                font-size: 24px;
+                            }
+                            & .cardSubTitle {
+                                font-size: 13px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .featuresCards {
+                & .owl-stage-outer {
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Resserch Section
+    .resserchSection {
+        & .innerFluid {
+            & .innersection {
+                & .searchCard {
+                    & .card {
+                        &::before,
+                        &::after {
+                        }
+                        & .card-body {
+                            &::before {
+                            }
+                            & .innerBody {
+                                & .cardImg {
+                                    height: 45px;
+                                    margin-bottom: 28px;
+                                    & img {
+                                    }
+                                }
+                                & .cardTitle {
+                                    font-size: 20px;
+                                    margin-bottom: 16px;
+                                }
+                                & .subContent {
+                                    font-size: 14px;
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                }
+                                & .cardTitle,
+                                & .subContent {
+                                }
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        & .card {
+                            &::before {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991.98px) {
+    // Hero Section
+    .heroSection {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        & .innerSection {
+            & .contantSide {
+                & .card {
+                    & .mainHeading {
+                        font-size: 35px;
+                        margin-bottom: 22px;
+                    }
+                    & .pera {
+                        // font-size: 16px;
+                        margin-bottom: 35px;
+                    }
+                    & .buttons {
+                        gap: 31px;
+                        margin-bottom: 25px;
+                    }
+                    & .socialGroup {
+                        & ul {
+                            & li {
+                                & .socialicon {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // featuresSection
+    .featuresSection {
+        padding-bottom: 60px;
+        margin-top: 60px;
+        &::before {
+            top: -80px;
+            width: 400px;
+        }
+        &::after {
+            width: 200px;
+        }
+        & .innerSection {
+            & .featuresHeading {
+                font-size: 35px;
+                margin-bottom: 35px;
+            }
+            & .educationCard {
+                & .card {
+                    & .card-body {
+                        & .innerBody {
+                            & .cardImg {
+                                height: 45px;
+                            }
+                            & .cardTitle {
+                                font-size: 24px;
+                            }
+                            & .cardSubTitle {
+                                font-size: 13px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .featuresCards {
+                & .owl-stage-outer {
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Resserch Section
+    .resserchSection {
+        & .innerFluid {
+            & .innersection {
+                & .searchCard {
+                    & .card {
+                        &::before,
+                        &::after {
+                        }
+                        & .card-body {
+                            &::before {
+                            }
+                            & .innerBody {
+                                & .cardImg {
+                                    height: 40px;
+                                    margin-bottom: 26px;
+                                    & img {
+                                    }
+                                }
+                                & .cardTitle {
+                                    // font-size: 20px;
+                                    // margin-bottom: 16px;
+                                }
+                                & .subContent {
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                }
+                                & .cardTitle,
+                                & .subContent {
+                                }
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(3),
+                    &:last-child {
+                        & .card {
+                            &::before {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    // Hero Section
+    .heroSection {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        & .innerSection {
+            & .contantSide {
+                & .card {
+                    & .mainHeading {
+                        font-size: 32px;
+                        margin-bottom: 20px;
+                    }
+                    & .pera {
+                        font-size: 14px;
+                        margin-bottom: 30px;
+                    }
+                    & .buttons {
+                        gap: 25px;
+                        margin-bottom: 20px;
+                    }
+                    & .socialGroup {
+                        & ul {
+                            & li {
+                                & .socialicon {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // featuresSection
+    .featuresSection {
+        padding-bottom: 50px;
+        margin-top: 50px;
+        &::before {
+            top: -50px;
+            width: 350px;
+            left: -50px;
+        }
+        &::after {
+            top: -220px;
+        }
+        & .innerSection {
+            & .featuresHeading {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+            & .educationCard {
+                & .card {
+                    & .card-body {
+                        & .innerBody {
+                            & .cardImg {
+                                height: 45px;
+                            }
+                            & .cardTitle {
+                                font-size: 24px;
+                            }
+                            & .cardSubTitle {
+                                font-size: 13px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .featuresCards {
+                & .owl-stage-outer {
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Resserch Section
+    .resserchSection {
+        & .innerFluid {
+            & .innersection {
+                & .searchCard {
+                    & .card {
+                        &::before,
+                        &::after {
+                        }
+                        & .card-body {
+                            &::before {
+                            }
+                            & .innerBody {
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                                & .cardTitle {
+                                }
+                                & .subContent {
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                }
+                                & .cardTitle,
+                                & .subContent {
+                                }
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(3),
+                    &:last-child {
+                        & .card {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 575.98px) {
+    // Hero Section
+    .heroSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        & .innerSection {
+            & .contantSide {
+                & .card {
+                    & .mainHeading {
+                        font-size: 28px;
+                        margin-bottom: 18px;
+                    }
+                    & .pera {
+                        font-size: 12px;
+                        margin-bottom: 25px;
+                    }
+                    & .buttons {
+                        gap: 25px;
+                        margin-bottom: 18px;
+                    }
+                    & .socialGroup {
+                        & ul {
+                            & li {
+                                & .socialicon {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // featuresSection
+    .featuresSection {
+        margin-top: 40px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+        & .innerSection {
+            & .featuresHeading {
+                font-size: 28px;
+            }
+            & .educationCard {
+                & .card {
+                    & .card-body {
+                        & .innerBody {
+                            min-height: 100px;
+                            & .cardImg {
+                                height: 40px;
+                            }
+                            & .cardTitle {
+                                font-size: 20px;
+                            }
+                            & .cardSubTitle {
+                                font-size: 12px;
+                            }
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .featuresCards {
+                & .owl-stage-outer {
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Resserch Section
+    .resserchSection {
+        & .innerFluid {
+            & .innersection {
+                & .searchCard {
+                    margin-bottom: 16px;
+                    & .card {
+                        min-height: auto;
+                        &::before,
+                        &::after {
+                            display: none !important;
+                        }
+                        & .card-body {
+                            &::before {
+                            }
+                            & .innerBody {
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                                & .cardTitle {
+                                }
+                                & .subContent {
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                }
+                                & .cardTitle,
+                                & .subContent {
+                                }
+                                & .cardImg {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
