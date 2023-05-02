@@ -6,9 +6,9 @@
         & .contantSide {
             & .card {
                 & .mainHeading {
-                    font-family: "Inter";
+                    font-family: 'Montserrat';
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-size: 63.3327px;
                     line-height: 77px;
                     color: #444444;
@@ -18,9 +18,9 @@
                     }
                 }
                 & .pera {
-                    font-family: "Inter";
+                    font-family: 'Montserrat';
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 600;
                     font-size: 19.5979px;
                     line-height: 24px;
                     color: #282828;
@@ -76,9 +76,9 @@
     }
     & .innerSection {
         & .featuresHeading {
-            font-family: "Inter";
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 83.1813px;
             line-height: 101px;
             margin-bottom: 63px;
@@ -94,15 +94,15 @@
                             height: 75px;
                         }
                         & .cardTitle {
-                            font-family: "Inter";
+                            font-family: 'Montserrat';
                             font-style: normal;
-                            font-weight: 400;
+                            font-weight: 500;
                             font-size: 29.9116px;
                             line-height: 36px;
                             color: #ffffff;
                         }
                         & .cardSubTitle {
-                            font-family: "Inter";
+                            font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 16.7419px;
@@ -147,17 +147,19 @@
 
 // Resserch Section
 .resserchSection {
-    background: #f5f5f5;
     & .innerFluid {
         & .innersection {
             & .searchCard {
+                box-shadow: -8px 0 15px -8px #33333373;
                 & .card {
+                    overflow: hidden;
                     min-height: 450px;
                     &::before {
                         content: "";
                         position: absolute;
                         left: 3px;
                         top: 50%;
+                        z-index: 3;
                         background: url(../../assets/images/svg/trengalShap.svg) no-repeat, center;
                         background-size: cover;
                         width: 123.37px;
@@ -211,7 +213,9 @@
                                 transition: all 0.3s ease-in-out;
                             }
                         }
-                        &:hover {
+                    }
+                    &:hover {
+                        & .card-body {
                             box-shadow: 1px -1px 15px 2px #00000088;
                             &::before {
                                 width: 100%;
@@ -228,13 +232,52 @@
                         }
                     }
                 }
-
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:last-child {
+                    &:hover {
+                        & .card {
+                            // overflow: hidden;
+                            &::before {
+                                // display: block;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        & .card-body {
+                            box-shadow: 1px -1px 15px 2px #00000088;
+                            &::before {
+                                width: 100%;
+                            }
+                            & .cardTitle,
+                            & .subContent {
+                                color: #fff;
+                            }
+                            & .cardImg {
+                                & img {
+                                    filter: brightness(10);
+                                }
+                            }
+                        }
+                    }
+                }
                 &:nth-child(2),
                 &:nth-child(3),
                 &:nth-child(4),
                 &:last-child {
                     & .card {
                         &::before {
+                            // display: none;
+                            // opacity: 0;
+                            // visibility: hidden;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+                &:last-child {
+                    & .card {
+                        &::after {
                             display: none;
                         }
                     }
@@ -246,7 +289,6 @@
 
 // Simplify Section
 .simplifySection {
-    background: #f5f5f5;
     padding-top: 136px;
     &::before {
         content: "";
@@ -259,9 +301,9 @@
     }
     & .innerSection {
         & .simplifyHeading {
-            font-family: "Inter";
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 93.8263px;
             line-height: 114px;
             color: #282828;
@@ -271,9 +313,9 @@
             }
         }
         & .subHeading {
-            font-family: "Inter";
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 26.599px;
             line-height: 32px;
             color: #282828;
@@ -289,9 +331,9 @@
                         height: 118.6px;
                     }
                     & .cradTitle {
-                        font-family: "Inter";
+                        font-family: 'Montserrat';
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 700;
                         font-size: 16.6703px;
                         line-height: 20px;
                         color: #000000;
@@ -303,15 +345,14 @@
 }
 // Explaning Section
 .explainingSection {
-    background: #f5f5f5;
     &::before {
-        content: "";
-        position: absolute;
-        right: -175px;
-        width: 337.33px;
-        height: 337.33px;
-        border-radius: 50%;
-        background-color: #008cba;
+        // content: "";
+        // position: absolute;
+        // right: -175px;
+        // width: 337.33px;
+        // height: 337.33px;
+        // border-radius: 50%;
+        // background-color: #008cba;
         // background-image: url(../../assets/images/svg/explainingBg.svg);
         // background-repeat: no-repeat;
         // background-size: cover;
@@ -323,9 +364,9 @@
     }
     & .explainingHeading,
     & .subHeading {
-        font-family: "Inter";
+        font-family: 'Montserrat';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 70.8621px;
         line-height: 86px;
     }
@@ -349,13 +390,12 @@
 
 // why Choose Us Section
 .whyChooseUsSection {
-    background: #f5f5f5;
     padding: 102px 0px 120px 0px;
     & .innerSection {
         & .whyChooseHeading {
-            font-family: "Inter";
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 128.716px;
             line-height: 156px;
             color: #000000;
@@ -369,7 +409,7 @@
                     background-color: #008cba;
                     position: absolute;
                     width: 100%;
-                    right: -40%;
+                    left: 0;
                     bottom: 0;
                 }
             }
@@ -398,13 +438,14 @@
                     }
                     & .counters,
                     & .counterName {
-                        font-family: "Inter";
+                        font-family: 'Montserrat';
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         color: #ffffff;
                         transition: all ease-in-out 0.3s;
                     }
                     & .counters {
+                        font-weight: 500;
                         font-size: 55px;
                         line-height: 65px;
                     }
@@ -440,12 +481,11 @@
 
 // Cross Section
 .crossSection {
-    background: #f5f5f5;
     & .InnerSection {
         & .crossHeading {
-            font-family: "Inter";
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 163.954px;
             line-height: 198px;
             color: #000000;
@@ -458,7 +498,6 @@
 
 // Testimonial Section
 .testimonialSection {
-    background: #f5f5f5;
     padding-top: 220px;
     overflow: hidden;
     & .innerSection {
@@ -478,11 +517,12 @@
                                 width: 254.62px;
                                 margin-top: -125px;
                                 box-shadow: 0px 0px 20px 0px #00000038;
+                                border: 6px solid #fff;
                             }
                             & .clientName {
-                                font-family: "Inter";
+                                font-family: 'Montserrat';
                                 font-style: normal;
-                                font-weight: 400;
+                                font-weight: 600;
                                 font-size: 43.7617px;
                                 line-height: 53px;
                                 margin: 36px 0px 13px 0px;
@@ -495,7 +535,7 @@
                                 }
                             }
                             & .clientText {
-                                font-family: "Inter";
+                                font-family: 'Montserrat';
                                 font-style: normal;
                                 font-weight: 400;
                                 font-size: 29.5445px;
@@ -541,7 +581,7 @@
             margin-bottom: 47px;
         }
         & .contant {
-            font-family: "Inter";
+            font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
             font-size: 29.5445px;
@@ -582,7 +622,7 @@
         box-shadow: 0px 0px 20px 4px #000000;
         left: 0px;
         padding: 50px 20px;
-        width: 70px;
+        width: 60px;
         ul {
             & li {
                 & .links {
@@ -600,7 +640,7 @@
     background-color: #008CBA;
     & .innerSection {
         & .copyRight {
-            font-family: "Inter";
+            font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
             font-size: 20.0008px;
@@ -958,7 +998,7 @@
         & .subHeading {
             &::before {
                 width: 300px;
-                bottom: -31px;
+                bottom: -20px;
             }
         }
     }
@@ -1097,7 +1137,6 @@
         }
         & .socialIcon {
             padding: 45px 18px;
-            width: 60px;
             ul {
                 & li {
                     & .links {

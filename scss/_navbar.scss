@@ -14,12 +14,12 @@
 .navLinks{
     & .nav-item {
         & .nav-link {
-            font-family: 'Inter';
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 600;
             font-size: 22.2032px;
             line-height: 27px;
-            color: #282828;
+            color: #6e6e6e;
             height: 53.72px;
             transition: all 0.3s ease-in-out;
             &:hover{
@@ -38,13 +38,14 @@
         .signInBtn {
             height: 49.01px;
             background: #008cba;
-            font-family: "Inter";
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 13.3219px;
             line-height: 16px;
             box-shadow: 4px 4px 15px -1px #00000085;
             color: #ffffff;
+            padding-right: 60px;
             & .userImg {
                 width: 36.22px;
                 height: 36.22px;
