@@ -303,23 +303,23 @@
 }
 // Explaning Section
 .explainingSection {
-
     background: #f5f5f5;
-    &::before{
-        content: '';
+    &::before {
+        content: "";
         position: absolute;
         right: -175px;
         width: 337.33px;
         height: 337.33px;
         border-radius: 50%;
-        background-color: #008CBA;
+        background-color: #008cba;
     }
     & .explaningImg {
         height: 112.07px;
         margin-bottom: 41px;
     }
-    & .explainingHeading, & .subHeading {
-        font-family: 'Inter';
+    & .explainingHeading,
+    & .subHeading {
+        font-family: "Inter";
         font-style: normal;
         font-weight: 400;
         font-size: 70.8621px;
@@ -329,9 +329,9 @@
         color: #000000;
     }
     & .subHeading {
-        color: #008CBA;
-        &::before{
-            content: '';
+        color: #008cba;
+        &::before {
+            content: "";
             height: 2px;
             width: 340.99px;
             background-color: #008cba;
@@ -341,7 +341,33 @@
             transform: translate(-50%, -50%);
         }
     }
+}
 
+// why Choose Us Section
+.whyChooseUsSection {
+    & .innerSection {
+        & .whyChooseHeading {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 128.716px;
+            line-height: 156px;
+            color: #000000;
+            & span{
+                color: #008CBA;
+                position: relative;
+                &::before{
+                    content: '';
+                    height: 2px;
+                    background-color: #008CBA;
+                    position: absolute;
+                    width: 100%;
+                    right: -50%;
+                    bottom: 0;
+                }
+            }
+        }
+    }
 }
 
 // * @@@@@@@@@@@@@@@@@ [ Responsive BreckPoint ] @@@@@@@@@@@@@@@@@@@@@@
@@ -581,7 +607,7 @@
     }
     // Explaning Section
     .explainingSection {
-        &::before{
+        &::before {
             right: -175px;
             width: 310.33px;
             height: 310.33px;
@@ -590,19 +616,19 @@
             height: 100px;
             margin-bottom: 35px;
         }
-        & .explainingHeading, & .subHeading {
+        & .explainingHeading,
+        & .subHeading {
             font-size: 60px;
             line-height: normal;
         }
         & .explainingHeading {
         }
         & .subHeading {
-            &::before{
+            &::before {
                 width: 300px;
                 bottom: -31px;
             }
         }
-
     }
 }
 @media screen and (max-width: 1199.98px) {
@@ -779,7 +805,7 @@
     }
     // Explaning Section
     .explainingSection {
-        &::before{
+        &::before {
             right: -130px;
             width: 250.33px;
             height: 250.33px;
@@ -788,13 +814,14 @@
             height: 90px;
             margin-bottom: 30px;
         }
-        & .explainingHeading, & .subHeading {
+        & .explainingHeading,
+        & .subHeading {
             font-size: 45px;
         }
         & .explainingHeading {
         }
         & .subHeading {
-            &::before{
+            &::before {
                 width: 230px;
                 bottom: -25px;
             }
@@ -934,6 +961,65 @@
             }
         }
     }
+    // Simplify Section
+    .simplifySection {
+        padding-top: 80px;
+        &::before {
+            // height: 452px;
+            // background-size: contain;
+            // width: 317px;
+        }
+        & .innerSection {
+            & .simplifyHeading {
+                font-size: 35px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 18px;
+            }
+            & .experiencesCard {
+                padding: 60px 0px 45px 0px;
+                & .innerBody {
+                    & .brandCard {
+                        margin-bottom: 40px;
+                    }
+                    & .cards {
+                        & .cardImg {
+                            height: 80px;
+                        }
+                        & .cradTitle {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Explaning Section
+    .explainingSection {
+        &::before {
+            right: -110px;
+            width: 220.33px;
+            height: 220.33px;
+        }
+        & .explaningImg {
+            height: 80px;
+            margin-bottom: 25px;
+        }
+        & .explainingHeading,
+        & .subHeading {
+            font-size: 35px;
+        }
+        & .explainingHeading {
+        }
+        & .subHeading {
+            &::before {
+                width: 200px;
+                bottom: -20px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 767.98px) {
     // Hero Section
@@ -1064,6 +1150,62 @@
             }
         }
     }
+    // Simplify Section
+    .simplifySection {
+        padding-top: 70px;
+        &::before {
+        }
+        & .innerSection {
+            & .simplifyHeading {
+                font-size: 32px;
+                margin-bottom: 15px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 16px;
+            }
+            & .experiencesCard {
+                padding: 50px 0px 35px 0px;
+                & .innerBody {
+                    & .brandCard {
+                        margin-bottom: 15px;
+                    }
+                    & .cards {
+                        & .cardImg {
+                            height: 60px;
+                        }
+                        & .cradTitle {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Explaning Section
+    .explainingSection {
+        &::before {
+            right: -80px;
+            width: 160px;
+            height: 160px;
+        }
+        & .explaningImg {
+            height: 60px;
+            margin-bottom: 15px;
+        }
+        & .explainingHeading,
+        & .subHeading {
+            font-size: 32px;
+        }
+        & .explainingHeading {
+        }
+        & .subHeading {
+            &::before {
+                width: 150px;
+                bottom: -10px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 575.98px) {
     // Hero Section
@@ -1183,6 +1325,63 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    // Simplify Section
+    .simplifySection {
+        padding-top: 40px;
+        &::before {
+            display: none;
+        }
+        & .innerSection {
+            & .simplifyHeading {
+                font-size: 28px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 14px;
+            }
+            & .experiencesCard {
+                padding: 40px 0px 35px 0px;
+                & .innerBody {
+                    & .brandCard {
+                        margin-bottom: 13px;
+                    }
+                    & .cards {
+                        & .cardImg {
+                            height: 50px;
+                        }
+                        & .cradTitle {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Explaning Section
+    .explainingSection {
+        &::before {
+            right: -60px;
+            width: 100px;
+            height: 100px;
+        }
+        & .explaningImg {
+            height: 50px;
+            margin-bottom: 13px;
+        }
+        & .explainingHeading,
+        & .subHeading {
+            font-size: 28px;
+        }
+        & .explainingHeading {
+        }
+        & .subHeading {
+            &::before {
+                width: 140px;
+                bottom: -10px;
             }
         }
     }
