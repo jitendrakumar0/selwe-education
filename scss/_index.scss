@@ -246,7 +246,17 @@
 
 // Simplify Section
 .simplifySection {
-    margin-top: 158px;
+    background: #f5f5f5;
+    padding-top: 136px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0px;
+        background: url(../../assets/images/svg/simplifyShap.svg) no-repeat, center;
+        height: 703.12px;
+        width: 532.64px;
+    }
     & .innerSection {
         & .simplifyHeading {
             font-family: "Inter";
@@ -270,8 +280,68 @@
         }
         & .experiencesCard {
             padding: 91px 0px 74px 0px;
+            & .innerBody {
+                & .brandCard {
+                    margin-bottom: 88px;
+                }
+                & .cards {
+                    & .cardImg {
+                        height: 118.6px;
+                    }
+                    & .cradTitle {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16.6703px;
+                        line-height: 20px;
+                        color: #000000;
+                    }
+                }
+            }
         }
     }
+}
+// Explaning Section
+.explainingSection {
+
+    background: #f5f5f5;
+    &::before{
+        content: '';
+        position: absolute;
+        right: -175px;
+        width: 337.33px;
+        height: 337.33px;
+        border-radius: 50%;
+        background-color: #008CBA;
+    }
+    & .explaningImg {
+        height: 112.07px;
+        margin-bottom: 41px;
+    }
+    & .explainingHeading, & .subHeading {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70.8621px;
+        line-height: 86px;
+    }
+    & .explainingHeading {
+        color: #000000;
+    }
+    & .subHeading {
+        color: #008CBA;
+        &::before{
+            content: '';
+            height: 2px;
+            width: 340.99px;
+            background-color: #008cba;
+            position: absolute;
+            left: 50%;
+            bottom: -31px;
+            transform: translate(-50%, -50%);
+        }
+    }
+
 }
 
 // * @@@@@@@@@@@@@@@@@ [ Responsive BreckPoint ] @@@@@@@@@@@@@@@@@@@@@@
@@ -470,6 +540,70 @@
             }
         }
     }
+    // Simplify Section
+    .simplifySection {
+        padding-top: 110px;
+        &::before {
+            // left: -10px;
+            height: 400px;
+            width: 200px;
+        }
+        & .innerSection {
+            & .simplifyHeading {
+                font-size: 80px;
+                line-height: normal;
+                margin-bottom: 25px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 24px;
+                line-height: normal;
+            }
+            & .experiencesCard {
+                padding: 85px 0px 68px 0px;
+                & .innerBody {
+                    & .brandCard {
+                        margin-bottom: 78px;
+                    }
+                    & .cards {
+                        & .cardImg {
+                            height: 100px;
+                        }
+                        & .cradTitle {
+                            font-size: 15px;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Explaning Section
+    .explainingSection {
+        &::before{
+            right: -175px;
+            width: 310.33px;
+            height: 310.33px;
+        }
+        & .explaningImg {
+            height: 100px;
+            margin-bottom: 35px;
+        }
+        & .explainingHeading, & .subHeading {
+            font-size: 60px;
+            line-height: normal;
+        }
+        & .explainingHeading {
+        }
+        & .subHeading {
+            &::before{
+                width: 300px;
+                bottom: -31px;
+            }
+        }
+
+    }
 }
 @media screen and (max-width: 1199.98px) {
     // Hero Section
@@ -604,6 +738,65 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    // Simplify Section
+    .simplifySection {
+        padding-top: 90px;
+        &::before {
+            height: 452px;
+            background-size: contain;
+            width: 317px;
+        }
+        & .innerSection {
+            & .simplifyHeading {
+                font-size: 45px;
+                margin-bottom: 20px;
+                & span {
+                }
+            }
+            & .subHeading {
+                font-size: 20px;
+            }
+            & .experiencesCard {
+                padding: 70px 0px 55px 0px;
+                & .innerBody {
+                    & .brandCard {
+                        margin-bottom: 60px;
+                    }
+                    & .cards {
+                        & .cardImg {
+                            height: 90px;
+                        }
+                        & .cradTitle {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Explaning Section
+    .explainingSection {
+        &::before{
+            right: -130px;
+            width: 250.33px;
+            height: 250.33px;
+        }
+        & .explaningImg {
+            height: 90px;
+            margin-bottom: 30px;
+        }
+        & .explainingHeading, & .subHeading {
+            font-size: 45px;
+        }
+        & .explainingHeading {
+        }
+        & .subHeading {
+            &::before{
+                width: 230px;
+                bottom: -25px;
             }
         }
     }
