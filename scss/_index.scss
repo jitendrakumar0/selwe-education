@@ -88,11 +88,28 @@
                 & .card-body {
                     border-radius: 75px;
                     transition: all ease-in-out 0.3s;
-                    aspect-ratio: 2/2;
                     display: flex;
+                    aspect-ratio: 2/2;
                     align-items: center;
                     justify-content: center;
+                    position: relative;
+                    padding: 15%;
+                    &::before{
+                        content: '';
+                        margin: auto;
+                        inset: 12%;
+                        position: absolute;
+                        border-radius: 40px;
+                        background: #33a3c8;
+                        box-shadow: 2px 2px 20px 0px #0000000e;
+                        opacity: 0;
+                        visibility: hidden;
+                        z-index: 0;
+                        transition: all 0.3s ease-in-out;
+                    }
                     & .innerBody {
+                        position: relative;
+                        z-index: 1;
                         & .cardImg {
                             height: 75px;
                         }
@@ -111,11 +128,20 @@
                             font-size: 16.7419px;
                             line-height: 20px;
                             color: #c7eaf2;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all 0.3s ease-in-out;
                         }
                     }
                     &:hover {
-                        background: #33a3c8;
-                        box-shadow: 2px 2px 20px 0px #0000000e;
+                        &::before{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        & .cardSubTitle {
+                            opacity: 1;
+                            visibility: visible;
+                        }
                     }
                 }
             }
@@ -418,7 +444,7 @@
                 position: relative;
                 &::before {
                     content: "";
-                    height: 2px;
+                    height: 4px;
                     background-color: #008cba;
                     position: absolute;
                     width: 100%;
