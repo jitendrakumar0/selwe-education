@@ -54,47 +54,49 @@
 
 <body>
     
-    <div class="container-fluid loginPage vh-100">
+    <div class="container-fluid loginPage d-flex align-items-center">
         <div class="container h-100 d-flex align-items-center">
-            <div class="row justify-content-center">
-                <div class="col-5">
+            <div class="row mx-0 justify-content-center w-100">
+                <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-auto loginWrapper px-0">
                     <div class="row mx-0 text-center">
                         <div class="col-12 welcome">Hey!</div>
                         <div class="col-12 wllcomeText">Login to your account</div>
                         <div class="col-12 connectionText">and get connected</div>
                         <div class="col-12">
                             <div class="inputWrapper position-relative">
-                                <input type="email">
+                                <img class="inputIcon" src="./assets/images/svg/userIcon.svg" alt="user icon">
+                                <input type="email" class="form-control" placeholder="Enter your username/email">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="inputWrapper position-relative">
-                                <input type="email">
+                                <img class="inputIcon" src="./assets/images/svg/password.svg" alt="user icon">
+                                <input type="password" class="form-control" placeholder="Enter your password">
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="row mx-0">
-                                <div class="col">
+                            <div class="row mx-0 align-items-center">
+                                <div class="col px-0">
                                     <div class="checkboxWrapper d-flex align-items-center">
-                                        <input type="checkbox" id="rememberMe">
-                                        <label for="rememberMe">Remember me</label>
+                                        <input class="form-check-input shadow-none me-2" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <a href="javascript:;">Frogot your password?</a>
+                                <div class="col-auto pe-0">
+                                    <a class="forgetLink" href="javascript:;">Frogot your password?</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button>Login</button>
+                            <button class="loginBtn">Login</button>
                         </div>
                         <div class="col-12">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="signInGoogle">
                                 <span>Sign in with</span>
-                                <img src="" alt="">
+                                <img class="ms-2" src="./assets/images/svg/googleIcon.svg" alt="google icon">
                             </a>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 signInLink" >
                             <span>New here?</span>
                             <a href="javascript:;">Sign Up</a>
                         </div>
