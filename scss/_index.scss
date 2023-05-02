@@ -210,7 +210,7 @@
                                 transition: all 0.3s ease-in-out;
                             }
                             & .subContent {
-                                font-size: 18px;
+                                font-size: 15px;
                                 line-height: normal;
                                 color: #404345;
                                 transition: all 0.3s ease-in-out;
@@ -917,7 +917,7 @@
                                     margin-bottom: 18px;
                                 }
                                 & .subContent {
-                                    font-size: 16px;
+                                    font-size: 14px;
                                 }
                             }
                             &:hover {
@@ -2494,7 +2494,7 @@
         padding-bottom: 130px;
         & .innerSection {
             & .logoImg {
-                height: 32px;
+                height: 25px;
                 margin-bottom: 20px;
             }
             & .contant {
@@ -2537,4 +2537,43 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 350px) {
+// footerSection
+.footerSection {
+    & .innerSection {
+        & .logoImg {
+        }
+        & .contant {
+        }
+        .footerButton {
+            flex-direction: column;
+            & .btnStyle1 {
+                &:hover {
+                }
+            }
+            & .btnStyle2 {
+                &:hover {
+                }
+            }
+        }
+        & .footerIcon {
+            ul {
+                & li {
+                    & .links {
+                    }
+                }
+            }
+        }
+    }
+    & .socialIcon {
+        ul {
+            & li {
+                & .links {
+                }
+            }
+        }
+    }
+}
 }

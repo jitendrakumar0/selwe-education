@@ -5,9 +5,9 @@ $('.featuresCards').owlCarousel({
     nav:false,
     responsive:{
         0:{
-            items:2
+            items:1
         },
-        500:{
+        360:{
             items:2
         },
         768:{
