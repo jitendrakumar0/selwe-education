@@ -312,6 +312,10 @@
         height: 337.33px;
         border-radius: 50%;
         background-color: #008cba;
+        // background-image: url(../../assets/images/svg/explainingBg.svg);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: right;
     }
     & .explaningImg {
         height: 112.07px;
@@ -345,6 +349,7 @@
 
 // why Choose Us Section
 .whyChooseUsSection {
+    background: #f5f5f5;
     padding: 102px 0px 120px 0px;
     & .innerSection {
         & .whyChooseHeading {
@@ -364,7 +369,7 @@
                     background-color: #008cba;
                     position: absolute;
                     width: 100%;
-                    right: -50%;
+                    right: -40%;
                     bottom: 0;
                 }
             }
@@ -372,30 +377,60 @@
         & .cardsection {
             & .card {
                 background-color: #008cba;
+                min-height: 250px;
+                transition: all ease-in-out 0.3s;
                 & .card-body {
                     & .momentImg {
                         height: 86px;
-                        & .themeImg {
+                        width: 100px;
+                        position: relative;
+                        & img {
+                            position: absolute;
+                            inset: 0;
                             transition: all ease-in-out 0.3s;
-                            display: none;
+                        }
+                        & .themeImg {
+                            opacity: 0;
+                            visibility: hidden;
                         }
                         & .whiteImg {
-                            transition: all ease-in-out 0.3s;
                         }
                     }
-                    & .counters, & .counterName {
+                    & .counters,
+                    & .counterName {
                         font-family: "Inter";
                         font-style: normal;
                         font-weight: 400;
                         color: #ffffff;
+                        transition: all ease-in-out 0.3s;
                     }
                     & .counters {
-                        font-size: 60.0023px;
-                        line-height: 73px;
+                        font-size: 55px;
+                        line-height: 65px;
                     }
                     & .counterName {
-                        font-size: 44.4332px;
-                        line-height: 54px;
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                }
+                &:hover {
+                    background-color: #fff;
+                    box-shadow: 0px 0px 15px 1px #00000088;
+                    & .card-body {
+                        & .momentImg {
+                            & .themeImg {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                            & .whiteImg {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
+                        & .counters,
+                        & .counterName {
+                            color: #008cba;
+                        }
                     }
                 }
             }
@@ -403,8 +438,206 @@
     }
 }
 
+// Cross Section
+.crossSection {
+    background: #f5f5f5;
+    & .InnerSection {
+        & .crossHeading {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 163.954px;
+            line-height: 198px;
+            color: #000000;
+            & span {
+                color: #008cba;
+            }
+        }
+    }
+}
+
+// Testimonial Section
+.testimonialSection {
+    background: #f5f5f5;
+    padding-top: 220px;
+    overflow: hidden;
+    & .innerSection {
+        background: url(../../assets/images/svg/testimonialBg.svg) no-repeat, center;
+        background-size: cover;
+        & .clintSlider {
+            & .owl-stage-outer {
+                padding: 0px;
+                overflow: unset;
+                & .owl-stage {
+                    & .owl-item {
+                        & .item {
+                            // padding-top: 125px;
+                            & .userImg {
+                                // position: absolute;
+                                height: 254.62px;
+                                width: 254.62px;
+                                margin-top: -125px;
+                                box-shadow: 0px 0px 20px 0px #00000038;
+                            }
+                            & .clientName {
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 43.7617px;
+                                line-height: 53px;
+                                margin: 36px 0px 13px 0px;
+                            }
+                            & .starts {
+                                & ul {
+                                    & li {
+                                        height: 23px;
+                                    }
+                                }
+                            }
+                            & .clientText {
+                                font-family: "Inter";
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 29.5445px;
+                                line-height: 36px;
+                                margin: 36px 0px 72px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .owl-dots {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 26px;
+                gap: 10px;
+                & .owl-dot {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 12px;
+                    opacity: 0.5;
+                    background-color: #fff;
+                    transition: all 0.3s;
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footerSection
+.footerSection {
+    background: url(../../assets/images/svg/footerBg.svg) no-repeat, right;
+    background-size: cover;
+    padding-top: 139px;
+    padding-bottom: 400px;
+    & .innerSection {
+        & .logoImg {
+            height: 68px;
+            margin-bottom: 47px;
+        }
+        & .contant {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 29.5445px;
+            line-height: 36px;
+            color: #ffffff;
+            margin-bottom: 68px;
+        }
+        .footerButton {
+            & .btnStyle1 {
+                &:hover {
+                    border-color: #ffffff;
+                }
+            }
+            & .btnStyle2 {
+                border: 1px solid #ffffff;
+                &:hover {
+                    border-color: #008cba !important;
+                }
+            }
+        }
+        & .footerIcon {
+            ul {
+                & li {
+                    & .links {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    & .socialIcon {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #008cba;
+        top: 50%;
+        transform: translate(0%, -50%);
+        box-shadow: 0px 0px 20px 4px #000000;
+        left: 0px;
+        padding: 50px 20px;
+        width: 70px;
+        ul {
+            & li {
+                & .links {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+// copyWrightSection
+.copyWrightSection {
+    height: 61.18px;
+    background-color: #008CBA;
+    & .innerSection {
+        & .copyRight {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20.0008px;
+            line-height: 24px;
+        }
+    }
+}
+
 // * @@@@@@@@@@@@@@@@@ [ Responsive BreckPoint ] @@@@@@@@@@@@@@@@@@@@@@
 @media screen and (max-width: 1599.98px) {
+    // Hero Section
+    .heroSection {
+        & .innerSection {
+            & .contantSide {
+                & .card {
+                    & .mainHeading {
+                        font-size: 57px;
+                        line-height: normal;
+                    }
+                    & .pera {
+                    }
+                    & .buttons {
+                    }
+                    & .socialGroup {
+                        & ul {
+                            & li {
+                                & .socialicon {
+                                    &:hover {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     // Resserch Section
     .resserchSection {
         & .innerFluid {
@@ -453,6 +686,72 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    // why Choose Us Section
+    .whyChooseUsSection {
+        padding: 95px 0px 115px 0px;
+        & .innerSection {
+            & .whyChooseHeading {
+                font-size: 110px;
+                line-height: 130px;
+                margin-bottom: 140px;
+                & span {
+                    &::before {
+                    }
+                }
+            }
+            & .cardsection {
+                & .card {
+                    & .card-body {
+                        & .momentImg {
+                            height: 80px;
+                            width: 90px;
+                            & img {
+                            }
+                            & .themeImg {
+                            }
+                            & .whiteImg {
+                            }
+                        }
+                        & .counters,
+                        & .counterName {
+                        }
+                        & .counters {
+                            font-size: 50px;
+                            line-height: normal;
+                        }
+                        & .counterName {
+                            font-size: 34px;
+                            line-height: normal;
+                        }
+                    }
+                    &:hover {
+                        & .card-body {
+                            & .momentImg {
+                                & .themeImg {
+                                }
+                                & .whiteImg {
+                                }
+                            }
+                            & .counters,
+                            & .counterName {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Cross Section
+    .crossSection {
+        & .InnerSection {
+            & .crossHeading {
+                font-size: 140px;
+                line-height: 160px;
+                & span {
                 }
             }
         }
@@ -663,6 +962,152 @@
             }
         }
     }
+    // why Choose Us Section
+    .whyChooseUsSection {
+        padding: 90px 0px 110px 0px;
+        & .innerSection {
+            & .whyChooseHeading {
+                font-size: 100px;
+                line-height: 120px;
+                margin-bottom: 120px;
+                & span {
+                    &::before {
+                    }
+                }
+            }
+            & .cardsection {
+                & .card {
+                    min-height: 200px;
+                    & .card-body {
+                        & .momentImg {
+                            height: 70px;
+                            & img {
+                            }
+                            & .themeImg {
+                            }
+                            & .whiteImg {
+                            }
+                        }
+                        & .counters,
+                        & .counterName {
+                        }
+                        & .counters {
+                            font-size: 45px;
+                        }
+                        & .counterName {
+                            font-size: 28px;
+                        }
+                    }
+                    &:hover {
+                        & .card-body {
+                            & .momentImg {
+                                & .themeImg {
+                                }
+                                & .whiteImg {
+                                }
+                            }
+                            & .counters,
+                            & .counterName {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Cross Section
+    .crossSection {
+        & .InnerSection {
+            & .crossHeading {
+                font-size: 120px;
+                line-height: 140px;
+                & span {
+                }
+            }
+        }
+    }
+    // Testimonial Section
+    .testimonialSection {
+        padding-top: 200px;
+        & .innerSection {
+            & .clintSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item {
+                                & .userImg {
+                                    height: 240px;
+                                    width: 240px;
+                                    margin-top: -120px;
+                                }
+                                & .clientName {
+                                    font-size: 38px;
+                                    line-height: 50px;
+                                    margin: 34px 0px 12px 0px;
+                                }
+                                & .starts {
+                                    & ul {
+                                        & li {
+                                            height: 22px;
+                                        }
+                                    }
+                                }
+                                & .clientText {
+                                    font-size: 26px;
+                                    line-height: 34px;
+                                    margin: 34px 0px 68px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // footerSection
+    .footerSection {
+        padding-top: 120px;
+        padding-bottom: 360px;
+        & .innerSection {
+            & .logoImg {
+                height: 65px;
+                margin-bottom: 42px;
+            }
+            & .contant {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 62px;
+            }
+            .footerButton {
+                & .btnStyle1 {
+                    &:hover {
+                    }
+                }
+                & .btnStyle2 {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .socialIcon {
+            padding: 45px 18px;
+            width: 60px;
+            ul {
+                & li {
+                    & .links {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1199.98px) {
     // Hero Section
@@ -673,7 +1118,7 @@
             & .contantSide {
                 & .card {
                     & .mainHeading {
-                        font-size: 45px;
+                        font-size: 42px;
                         margin-bottom: 25px;
                     }
                     & .pera {
@@ -712,7 +1157,7 @@
         }
         & .innerSection {
             & .featuresHeading {
-                font-size: 45px;
+                font-size: 55px;
                 margin-bottom: 40px;
             }
             & .educationCard {
@@ -810,7 +1255,7 @@
         }
         & .innerSection {
             & .simplifyHeading {
-                font-size: 45px;
+                font-size: 65px;
                 margin-bottom: 20px;
                 & span {
                 }
@@ -860,6 +1305,163 @@
             }
         }
     }
+    // why Choose Us Section
+    .whyChooseUsSection {
+        padding: 70px 0px 90px 0px;
+        & .innerSection {
+            & .whyChooseHeading {
+                font-size: 80px;
+                line-height: normal;
+                margin-bottom: 100px;
+                & span {
+                    &::before {
+                    }
+                }
+            }
+            & .cardsection {
+                & .card {
+                    min-height: 160px;
+                    & .card-body {
+                        & .momentImg {
+                            height: 60px;
+                            width: 70px;
+                            & img {
+                            }
+                            & .themeImg {
+                            }
+                            & .whiteImg {
+                            }
+                        }
+                        & .counters,
+                        & .counterName {
+                        }
+                        & .counters {
+                            font-size: 35px;
+                        }
+                        & .counterName {
+                            font-size: 22px;
+                        }
+                    }
+                    &:hover {
+                        & .card-body {
+                            & .momentImg {
+                                & .themeImg {
+                                }
+                                & .whiteImg {
+                                }
+                            }
+                            & .counters,
+                            & .counterName {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Cross Section
+    .crossSection {
+        & .InnerSection {
+            & .crossHeading {
+                font-size: 100px;
+                line-height: normal;
+                & span {
+                }
+            }
+        }
+    }
+    // Testimonial Section
+    .testimonialSection {
+        padding-top: 180px;
+        & .innerSection {
+            & .clintSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item {
+                                & .userImg {
+                                    height: 220px;
+                                    width: 220px;
+                                    margin-top: -110px;
+                                }
+                                & .clientName {
+                                    font-size: 32px;
+                                    line-height: normal;
+                                    margin: 32px 0px 12px 0px;
+                                }
+                                & .starts {
+                                    & ul {
+                                        & li {
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                                & .clientText {
+                                    font-size: 20px;
+                                    line-height: normal;
+                                    margin: 32px 0px 65px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // footerSection
+    .footerSection {
+        padding-top: 100px;
+        padding-bottom: 300px;
+        & .innerSection {
+            & .logoImg {
+                height: 58px;
+                margin-bottom: 38px;
+            }
+            & .contant {
+                font-size: 20px;
+                line-height: normal;
+                margin-bottom: 55px;
+            }
+            .footerButton {
+                & .btnStyle1 {
+                    &:hover {
+                    }
+                }
+                & .btnStyle2 {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .socialIcon {
+            padding: 45px 18px;
+            width: 60px;
+            ul {
+                & li {
+                    & .links {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+    // copyWrightSection
+    .copyWrightSection {
+        & .innerSection {
+            & .copyRight {
+                font-size: 18px;
+                line-height: normal;
+            }
+        }
+    }
+
 }
 @media screen and (max-width: 991.98px) {
     // Hero Section
@@ -870,11 +1472,11 @@
             & .contantSide {
                 & .card {
                     & .mainHeading {
-                        font-size: 35px;
+                        font-size: 31px;
                         margin-bottom: 22px;
                     }
                     & .pera {
-                        // font-size: 16px;
+                        font-size: 14px;
                         margin-bottom: 35px;
                     }
                     & .buttons {
@@ -908,7 +1510,7 @@
         }
         & .innerSection {
             & .featuresHeading {
-                font-size: 35px;
+                font-size: 45px;
                 margin-bottom: 35px;
             }
             & .educationCard {
@@ -1004,7 +1606,7 @@
         }
         & .innerSection {
             & .simplifyHeading {
-                font-size: 35px;
+                font-size: 45px;
                 & span {
                 }
             }
@@ -1050,6 +1652,163 @@
             &::before {
                 width: 200px;
                 bottom: -20px;
+            }
+        }
+    }
+    // why Choose Us Section
+    .whyChooseUsSection {
+        padding: 50px 0px 60px 0px;
+        & .innerSection {
+            & .whyChooseHeading {
+                font-size: 45px;
+                margin-bottom: 50px;
+                & span {
+                    &::before {
+                    }
+                }
+            }
+            & .cardsection {
+                & .card {
+                    min-height: 120px;
+                    & .card-body {
+                        & .momentImg {
+                            height: 40px;
+                            width: 50px;
+                            & img {
+                            }
+                            & .themeImg {
+                            }
+                            & .whiteImg {
+                            }
+                        }
+                        & .counters,
+                        & .counterName {
+                        }
+                        & .counters {
+                            font-size: 28px;
+                        }
+                        & .counterName {
+                            font-size: 14px;
+                        }
+                    }
+                    &:hover {
+                        & .card-body {
+                            & .momentImg {
+                                & .themeImg {
+                                }
+                                & .whiteImg {
+                                }
+                            }
+                            & .counters,
+                            & .counterName {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Cross Section
+    .crossSection {
+        & .InnerSection {
+            & .crossHeading {
+                font-size: 70px;
+                & span {
+                }
+            }
+        }
+    }
+    // Testimonial Section
+    .testimonialSection {
+        padding-top: 150px;
+        & .innerSection {
+            & .clintSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item {
+                                & .userImg {
+                                    height: 150px;
+                                    width: 150px;
+                                    margin-top: -75px;
+                                }
+                                & .clientName {
+                                    font-size: 26px;
+                                    margin: 25px 0px 11px 0px;
+                                }
+                                & .starts {
+                                    & ul {
+                                        & li {
+                                            height: 18px;
+                                        }
+                                    }
+                                }
+                                & .clientText {
+                                    font-size: 18px;
+                                    margin: 26px 0px 60px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+     // footerSection
+    .footerSection {
+        padding-top: 80px;
+        padding-bottom: 200px;
+        & .innerSection {
+            & .logoImg {
+                height: 45px;
+                margin-bottom: 35px;
+            }
+            & .contant {
+                font-size: 18px;
+                margin-bottom: 45px;
+            }
+            .footerButton {
+                & .btnStyle1 {
+                    &:hover {
+                    }
+                }
+                & .btnStyle2 {
+                    &:hover {
+                    }
+                }
+            }
+            & .footerIcon {
+                ul {
+                    & li {
+                        & .links {
+                        }
+                    }
+                }
+            }
+        }
+        & .socialIcon {
+            padding: 40px 14px;
+            ul {
+                & li {
+                    & .links {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+     // copyWrightSection
+    .copyWrightSection {
+        & .innerSection {
+            & .copyRight {
+                font-size: 16px;
             }
         }
     }
@@ -1239,6 +1998,161 @@
             }
         }
     }
+    // why Choose Us Section
+    .whyChooseUsSection {
+        padding: 40px 0px 50px 0px;
+        & .innerSection {
+            & .whyChooseHeading {
+                font-size: 32px;
+                margin-bottom: 40px;
+                & span {
+                    &::before {
+                    }
+                }
+            }
+            & .cardsection {
+                & .card {
+                    min-height: auto;
+                    & .card-body {
+                        & .momentImg {
+                            height: 30px;
+                            width: 30px;
+                            & img {
+                            }
+                            & .themeImg {
+                            }
+                            & .whiteImg {
+                            }
+                        }
+                        & .counters,
+                        & .counterName {
+                        }
+                        & .counters {
+                            font-size: 22px;
+                        }
+                        & .counterName {
+                            font-size: 13px;
+                        }
+                    }
+                    &:hover {
+                        & .card-body {
+                            & .momentImg {
+                                & .themeImg {
+                                }
+                                & .whiteImg {
+                                }
+                            }
+                            & .counters,
+                            & .counterName {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Cross Section
+    .crossSection {
+        & .InnerSection {
+            & .crossHeading {
+                font-size: 35px;
+                & span {
+                }
+            }
+        }
+    }
+    // Testimonial Section
+    .testimonialSection {
+        padding-top: 120px;
+        & .innerSection {
+            & .clintSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item {
+                                & .userImg {
+                                    height: 130px;
+                                    width: 130px;
+                                    margin-top: -65px;
+                                }
+                                & .clientName {
+                                    font-size: 22px;
+                                    margin: 22px 0px 10px 0px;
+                                }
+                                & .starts {
+                                    & ul {
+                                        & li {
+                                            height: 16px;
+                                        }
+                                    }
+                                }
+                                & .clientText {
+                                    font-size: 16px;
+                                    margin: 22px 0px 57px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // footerSection
+    .footerSection {
+        padding-top: 50px;
+        padding-bottom: 150px;
+        & .innerSection {
+            & .logoImg {
+                height: 35px;
+                margin-bottom: 30px;
+            }
+            & .contant {
+                font-size: 16px;
+                margin-bottom: 35px;
+            }
+            .footerButton {
+                & .btnStyle1 {
+                    &:hover {
+                    }
+                }
+                & .btnStyle2 {
+                    &:hover {
+                    }
+                }
+            }
+            & .footerIcon {
+                ul {
+                    & li {
+                        & .links {
+                        }
+                    }
+                }
+            }
+        }
+        & .socialIcon {
+            ul {
+                & li {
+                    & .links {
+                    }
+                }
+            }
+        }
+    }
+    // copyWrightSection
+    .copyWrightSection {
+        height: 50px;
+        & .innerSection {
+            & .copyRight {
+                font-size: 14px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 575.98px) {
     // Hero Section
@@ -1336,10 +2250,12 @@
                             }
                             & .innerBody {
                                 & .cardImg {
+                                    margin-bottom: 15px;
                                     & img {
                                     }
                                 }
                                 & .cardTitle {
+                                    margin-bottom: 5px;
                                 }
                                 & .subContent {
                                 }
@@ -1415,6 +2331,160 @@
             &::before {
                 width: 140px;
                 bottom: -10px;
+            }
+        }
+    }
+    // why Choose Us Section
+    .whyChooseUsSection {
+        padding: 30px 0px 40px 0px;
+        & .innerSection {
+            & .whyChooseHeading {
+                font-size: 28px;
+                margin-bottom: 30px;
+                & span {
+                    &::before {
+                    }
+                }
+            }
+            & .cardsection {
+                & .card {
+                    & .card-body {
+                        & .momentImg {
+                            height: 25px;
+                            width: 25px;
+                            & img {
+                            }
+                            & .themeImg {
+                            }
+                            & .whiteImg {
+                            }
+                        }
+                        & .counters,
+                        & .counterName {
+                        }
+                        & .counters {
+                            font-size: 18px;
+                        }
+                        & .counterName {
+                            font-size: 11px;
+                        }
+                    }
+                    &:hover {
+                        & .card-body {
+                            & .momentImg {
+                                & .themeImg {
+                                }
+                                & .whiteImg {
+                                }
+                            }
+                            & .counters,
+                            & .counterName {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Cross Section
+    .crossSection {
+        & .InnerSection {
+            & .crossHeading {
+                font-size: 32px;
+                & span {
+                }
+            }
+        }
+    }
+    // Testimonial Section
+    .testimonialSection {
+        padding-top: 100px;
+        & .innerSection {
+            & .clintSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item {
+                                & .userImg {
+                                    height: 100px;
+                                    width: 100px;
+                                    margin-top: -50px;
+                                }
+                                & .clientName {
+                                    font-size: 18px;
+                                    margin: 18px 0px 10px 0px;
+                                }
+                                & .starts {
+                                    & ul {
+                                        & li {
+                                            height: 15px;
+                                        }
+                                    }
+                                }
+                                & .clientText {
+                                    font-size: 14px;
+                                    margin: 20px 0px 50px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-dots {
+                    bottom: 18px;
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // footerSection
+    .footerSection {
+        padding-top: 40px;
+        padding-bottom: 130px;
+        & .innerSection {
+            & .logoImg {
+                height: 32px;
+                margin-bottom: 20px;
+            }
+            & .contant {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+            .footerButton {
+                & .btnStyle1 {
+                    &:hover {
+                    }
+                }
+                & .btnStyle2 {
+                    &:hover {
+                    }
+                }
+            }
+            & .footerIcon {
+                ul {
+                    & li {
+                        & .links {
+                        }
+                    }
+                }
+            }
+        }
+        & .socialIcon {
+            ul {
+                & li {
+                    & .links {
+                    }
+                }
+            }
+        }
+    }
+    // copyWrightSection
+    .copyWrightSection {
+        & .innerSection {
+            & .copyRight {
+                font-size: 12px;
             }
         }
     }

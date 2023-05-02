@@ -250,3 +250,9 @@
 body {
     overflow: hidden auto;
 }
+
+.tooltip {
+    & .tooltip-inner {
+        font-weight: 600;
+    }
+}
