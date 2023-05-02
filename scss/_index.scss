@@ -153,7 +153,13 @@
     & .innerFluid {
         & .innersection {
             & .searchCard {
-                box-shadow: -8px 0 15px -8px #33333373;
+                box-shadow: 22px 0px 15px -16px rgba(51,51,51,.4509803922);
+                &:first-child {
+                    box-shadow: inset 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922), 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922);
+                }
+                &:last-child {
+                    box-shadow: none;
+                }
                 & .card {
                     // overflow: hidden;
                     min-height: 450px;

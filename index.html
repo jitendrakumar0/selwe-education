@@ -446,7 +446,7 @@
     <!-- ! Explaining Video Section End -->
 
     <!-- * Why Choose Us Section Start -->
-    <div class="container-fluid whyChooseUsSection">
+    <div class="container-fluid whyChooseUsSection counter-show" id="projectFacts">
         <div class=" innerSection">
             <div class="row mx-0">
                 <div class="col-12 whyChooseHeading text-center">Why Choose<span>Selwe?</span></div>
@@ -634,5 +634,30 @@
     <script src="assets/libs/owlcarsousel/js/owlcarsousel.min.js"></script>
     <!-- * Main Js -->
     <script src="assets/js/mani.js"></script>
+    <script>
+        let isAlreadyRun = false;
+        $(window).scroll( function(){
+            $('.counter-show').each( function(i){
+                let bottom_of_object = $(this).position().top + $(this).outerHeight() / 2;
+                let bottom_of_window = $(window).scrollTop() + $(window).height();
+                    if( bottom_of_window > ( bottom_of_object + 20 )  ){
+                        if (!isAlreadyRun) {
+                            $('.counters').each(function () {
+                            $(this).prop('Counter', 0).animate({
+                                Counter: $(this).text()
+                            }, {
+                                    duration: 3500,
+                                    easing: 'swing',
+                                    step: function (now) {
+                                        $(this).text(Math.ceil(now));
+                                    }
+                                });
+                            });
+                        }
+                        isAlreadyRun = true;
+                    }
+            });
+        });
+    </script>
 </body>
 </html>
