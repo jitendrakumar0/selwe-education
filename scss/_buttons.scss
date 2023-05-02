@@ -13,7 +13,7 @@
     background: #008cba;
     border: 1px solid #008cba;
     color: #ffffff;
-    box-shadow: 4px 2px 15px 0px #00000085;
+    box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
 
     &:hover {
         border-color: #282828;
@@ -27,7 +27,7 @@
         background: #008cba;
         border-color: #008cba;
         color: #ffffff;
-        box-shadow: 4px 2px 15px 0px #00000085;
+        box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
     }
     &:active{
         background: #008cba !important;

@@ -24,14 +24,14 @@
             transition: all 0.3s ease-in-out;
             &:hover{
                 background: #008CBA;
-                box-shadow: 4px 4px 15px -1px #00000085;
+                box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
                 color: #FFFFFF;
             }
             &.active {
                 background: #008CBA;
                 font-size: 20.5916px;
                 line-height: 25px;
-                box-shadow: 4px 4px 15px -1px #00000085;
+                box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
                 color: #FFFFFF;
             }
         }
@@ -43,7 +43,7 @@
             font-weight: 500;
             font-size: 13.3219px;
             line-height: 16px;
-            box-shadow: 4px 4px 15px -1px #00000085;
+            box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
             color: #ffffff;
             padding-right: 60px;
             & .userImg {

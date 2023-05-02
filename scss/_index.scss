@@ -88,8 +88,11 @@
                 & .card-body {
                     border-radius: 75px;
                     transition: all ease-in-out 0.3s;
+                    aspect-ratio: 2/2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     & .innerBody {
-                        min-height: 170px;
                         & .cardImg {
                             height: 75px;
                         }
@@ -112,7 +115,7 @@
                     }
                     &:hover {
                         background: #33a3c8;
-                        box-shadow: 2px 2px 20px 0px #00000038;
+                        box-shadow: 2px 2px 20px 0px #0000000e;
                     }
                 }
             }
@@ -152,7 +155,7 @@
             & .searchCard {
                 box-shadow: -8px 0 15px -8px #33333373;
                 & .card {
-                    overflow: hidden;
+                    // overflow: hidden;
                     min-height: 450px;
                     &::before {
                         content: "";
@@ -216,17 +219,19 @@
                     }
                     &:hover {
                         & .card-body {
-                            box-shadow: 1px -1px 15px 2px #00000088;
+                            box-shadow: 2px 2px 20px 0px rgba(0,0,0,.0549019608);
                             &::before {
                                 width: 100%;
                             }
                             & .cardTitle,
                             & .subContent {
                                 color: #fff;
+                                transform: scale(1.1);
                             }
                             & .cardImg {
                                 & img {
                                     filter: brightness(10);
+                                    transform: scale(1.1);
                                 }
                             }
                         }
@@ -246,17 +251,19 @@
                             }
                         }
                         & .card-body {
-                            box-shadow: 1px -1px 15px 2px #00000088;
+                            box-shadow: 2px 2px 20px 0px rgba(0,0,0,.0549019608);
                             &::before {
                                 width: 100%;
                             }
                             & .cardTitle,
                             & .subContent {
                                 color: #fff;
+                                transform: scale(1.1);
                             }
                             & .cardImg {
                                 & img {
                                     filter: brightness(10);
+                                    transform: scale(1.1);
                                 }
                             }
                         }
@@ -269,8 +276,8 @@
                     & .card {
                         &::before {
                             // display: none;
-                            // opacity: 0;
-                            // visibility: hidden;
+                            opacity: 0;
+                            visibility: hidden;
                             transition: all 0.3s;
                         }
                     }
@@ -456,7 +463,7 @@
                 }
                 &:hover {
                     background-color: #fff;
-                    box-shadow: 0px 0px 15px 1px #00000088;
+                    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 20%);
                     & .card-body {
                         & .momentImg {
                             & .themeImg {
@@ -579,6 +586,9 @@
         & .logoImg {
             height: 68px;
             margin-bottom: 47px;
+            & img {
+                // filter: grayscale(1);
+            }
         }
         & .contant {
             font-family: 'Montserrat';
@@ -852,7 +862,6 @@
                 & .card {
                     & .card-body {
                         & .innerBody {
-                            min-height: 160px;
                             & .cardImg {
                                 height: 70px;
                             }
@@ -1204,7 +1213,6 @@
                     & .card-body {
                         border-radius: 55px;
                         & .innerBody {
-                            min-height: 140px;
                             & .cardImg {
                                 height: 60px;
                             }
@@ -1906,6 +1914,8 @@
             & .educationCard {
                 & .card {
                     & .card-body {
+                        // aspect-ratio: unset;
+                        // min-height:;
                         & .innerBody {
                             & .cardImg {
                                 height: 45px;
@@ -2243,16 +2253,16 @@
             & .educationCard {
                 & .card {
                     & .card-body {
+                        border-radius: 40px;
                         & .innerBody {
-                            min-height: 100px;
                             & .cardImg {
                                 height: 40px;
                             }
                             & .cardTitle {
-                                font-size: 20px;
+                                font-size: 16px;
                             }
                             & .cardSubTitle {
-                                font-size: 12px;
+                                font-size: 10px;
                             }
                         }
                         &:hover {
