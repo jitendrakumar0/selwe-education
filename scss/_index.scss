@@ -345,6 +345,7 @@
 
 // why Choose Us Section
 .whyChooseUsSection {
+    padding: 102px 0px 120px 0px;
     & .innerSection {
         & .whyChooseHeading {
             font-family: "Inter";
@@ -353,17 +354,49 @@
             font-size: 128.716px;
             line-height: 156px;
             color: #000000;
-            & span{
-                color: #008CBA;
+            margin-bottom: 170px;
+            & span {
+                color: #008cba;
                 position: relative;
-                &::before{
-                    content: '';
+                &::before {
+                    content: "";
                     height: 2px;
-                    background-color: #008CBA;
+                    background-color: #008cba;
                     position: absolute;
                     width: 100%;
                     right: -50%;
                     bottom: 0;
+                }
+            }
+        }
+        & .cardsection {
+            & .card {
+                background-color: #008cba;
+                & .card-body {
+                    & .momentImg {
+                        height: 86px;
+                        & .themeImg {
+                            transition: all ease-in-out 0.3s;
+                            display: none;
+                        }
+                        & .whiteImg {
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+                    & .counters, & .counterName {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 400;
+                        color: #ffffff;
+                    }
+                    & .counters {
+                        font-size: 60.0023px;
+                        line-height: 73px;
+                    }
+                    & .counterName {
+                        font-size: 44.4332px;
+                        line-height: 54px;
+                    }
                 }
             }
         }
