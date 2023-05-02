@@ -1,0 +1,65 @@
+
+.btnStyle {
+    height: 45.67px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.1206px;
+    line-height: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnStyle1 {
+    background: #008cba;
+    border: 1px solid #008cba;
+    color: #ffffff;
+    box-shadow: 4px 2px 15px 0px #00000085;
+
+    &:hover {
+        border-color: #282828;
+        color: #282828;
+    }
+}
+.btnStyle2 {
+    border: 1px solid #282828;
+    color: #282828;
+    &:hover {
+        background: #008cba;
+        border-color: #008cba;
+        color: #ffffff;
+        box-shadow: 4px 2px 15px 0px #00000085;
+    }
+    &:active{
+        background: #008cba !important;
+        border-color: #008cba !important;
+        color: #ffffff !important;
+    }
+}
+
+
+@media screen and (max-width: 1399.98px) {
+    .btnStyle {
+        height: 40px;
+        font-size: 16px;
+        line-height: normal;
+    }
+    
+}
+@media screen and (max-width: 1199.98px) {
+    .btnStyle {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    
+}
+@media screen and (max-width: 767.98px) {
+    .btnStyle {
+        height: 35px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    
+}

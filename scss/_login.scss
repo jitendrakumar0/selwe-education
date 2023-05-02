@@ -1,0 +1,560 @@
+.loginPage {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 320px;
+        width: 320px;
+        top: 50%;
+        background-image: url(./../images/svg/loginBg1.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: -1;
+    }    
+    &::after {
+        content: "";
+        position: absolute;
+        height: 390px;
+        width: 150px;
+        top: 50%;
+        background-image: url(./../images/svg/loginBg2.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: -1;
+    }
+    & .loginWrapper {
+        max-width: 600px;
+    }
+    & .welcome {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 68.6239px;
+        line-height: 84px;
+        color: #008CBA;
+        margin-bottom: 15px;
+    }
+    & .wllcomeText {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23.6714px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 6px;
+    }
+    & .connectionText {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23.6714px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 27px;
+    }
+    & .inputWrapper {
+        margin-bottom: 24px;
+        & .inputIcon {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            transform: translateY(-50%);
+        }
+        & .form-control {
+            border: 0.993771px solid #BCBCBC;
+            width: 555.72px;
+            height:75.31px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23.6714px;
+            line-height: 29px;
+            color: #999999;
+            border-radius: 20px;
+            padding-left: 72px;
+            &::placeholder {
+                color: #999999;
+            }
+        }
+    }
+    & .checkboxWrapper {
+        & .form-check-input {
+            height: 19px;
+            width: 19px;
+            border-radius: 0;
+            margin-top: 0;
+            cursor: pointer;
+            &:checked {
+                background-color: #008CBA;
+                border-color: #008CBA;
+            }
+        }
+        & .form-check-label {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16.1958px;
+            line-height: 20px;
+            color: #282828;
+            user-select: none;
+            cursor: pointer;
+        }
+    }
+    & .forgetLink {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.1958px;
+        line-height: 20px;
+        color: #282828;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: #008CBA;
+        }
+    }
+    & .loginBtn {
+        margin: 51px 0 37px 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34.021px;
+        line-height: 41px;
+        color: #FFFFFF;
+        background: #008CBA;
+        border: 2px solid #008CBA;
+        width: 555.72px;
+        height:75.31px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 4px 4px 15px -1px rgba(0,0,0,.521568627);
+        transition: 0.3s ease-in-out;
+        &:hover {
+            background-color: darken(#008CBA, 5);
+        }
+    }
+    & .signInGoogle {
+        text-decoration: none;
+        margin-bottom: 33px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        & span {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25.077px;
+            line-height: 30px;
+            color: #282828;}
+        & img {
+            height: 30px;
+        }
+    }
+    & .signInLink {
+        & span {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22.2032px;
+            line-height: 27px;
+            color: #282828;
+        }
+        & a {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22.2032px;
+            line-height: 27px;
+            color: #282828;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: #008CBA;
+            }
+        }
+    }
+}
+
+@media (max-width: 1599px) {
+    .loginPage {
+        &::before {
+        }    
+        &::after {
+        }
+        & .loginWrapper {
+        }
+        & .welcome {
+        }
+        & .wllcomeText {
+        }
+        & .connectionText {
+        }
+        & .inputWrapper {
+            & .inputIcon {
+            }
+            & .form-control {
+            }
+        }
+        & .checkboxWrapper {
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+        }
+        & .forgetLink {
+        }
+        & .loginBtn {
+        }
+        & .signInGoogle {
+            & span {
+            }
+            & img {
+            }
+        }
+        & .signInLink {
+            & span {
+            }
+            & a {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .loginPage {
+        &::before {
+            width: 270px;
+            height: 270px;
+        }    
+        &::after {
+            height: 320px;
+            width: 120px;
+        }
+        & .loginWrapper {
+            max-width: unset;
+        }
+        & .welcome {
+            font-size: 65px;
+            margin-bottom: 10px;
+        }
+        & .wllcomeText {
+            font-size: 22px;
+        }
+        & .connectionText {
+            font-size: 22px;
+        }
+        & .inputWrapper {
+            & .inputIcon {
+                height: 27px;
+            }
+            & .form-control {
+                height: 68px;
+                width: 100%;
+                font-size: 20px;
+                border-radius: 18px;
+            }
+        }
+        & .checkboxWrapper {
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+        }
+        & .forgetLink {
+        }
+        & .loginBtn {
+            height: 68px;
+            width: 100%;
+            font-size: 30px;
+            margin: 42px 0 30px 0;
+        }
+        & .signInGoogle {
+            margin-bottom: 22px;
+            & span {
+                font-size: 22px;
+            }
+            & img {
+                height: 28px;
+            }
+        }
+        & .signInLink {
+            & span {
+                font-size: 20px;
+            }
+            & a {
+                font-size: 20px;
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .loginPage {
+        &::before {
+            width: 220px;
+            height: 220px;
+        }    
+        &::after {
+            width: 100px;
+            height: 280px;
+        }
+        & .loginWrapper {
+        }
+        & .welcome {
+        }
+        & .wllcomeText {
+        }
+        & .connectionText {
+        }
+        & .inputWrapper {
+            & .inputIcon {
+            }
+            & .form-control {
+                
+            }
+        }
+        & .checkboxWrapper {
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+        }
+        & .forgetLink {
+        }
+        & .loginBtn {
+            font-size: 29px;
+        }
+        & .signInGoogle {
+            & span {
+            }
+            & img {
+            }
+        }
+        & .signInLink {
+            & span {
+            }
+            & a {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .loginPage {
+        &::before {
+            width: 130px;
+            height: 130px;
+        }    
+        &::after {
+            height: 210px;
+            width: 80px;
+        }
+        & .loginWrapper {
+        }
+        & .welcome {
+            font-size: 60px;
+            margin-bottom: 0;
+        }
+        & .wllcomeText {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        & .connectionText {
+            font-size: 20px;
+            margin-bottom: 22px;
+        }
+        & .inputWrapper {
+            & .inputIcon {
+                height: 24px;
+                left: 20px;
+            }
+            & .form-control {
+                font-size: 18px;
+                height: 64px;
+                padding-left: 60px;
+            }
+        }
+        & .checkboxWrapper {
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+        }
+        & .forgetLink {
+        }
+        & .loginBtn {
+            height: 64px;
+            font-size: 28px;
+            margin: 35px 0 25px 0;
+        }
+        & .signInGoogle {
+            margin-bottom: 18px;
+            & span {
+                font-size: 20px;
+            }
+            & img {
+                height: 26px;
+            }
+        }
+        & .signInLink {
+            & span {
+                font-size: 18px;
+            }
+            & a {
+                font-size: 18px;
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .loginPage {
+        &::before {
+            display: none;
+        }    
+        &::after {
+            display: none;
+        }
+        & .loginWrapper {
+        }
+        & .welcome {
+        }
+        & .wllcomeText {
+        }
+        & .connectionText {
+        }
+        & .inputWrapper {
+            & .inputIcon {
+            }
+            & .form-control {
+                
+            }
+        }
+        & .checkboxWrapper {
+            & .form-check-input {
+                &:checked {
+                }
+            }
+            & .form-check-label {
+            }
+        }
+        & .forgetLink {
+        }
+        & .loginBtn {
+        }
+        & .signInGoogle {
+            & span {
+            }
+            & img {
+            }
+        }
+        & .signInLink {
+            & span {
+            }
+            & a {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .loginPage {
+        &::before {
+        }    
+        &::after {
+        }
+        & .loginWrapper {
+        }
+        & .welcome {
+            font-size: 45px;
+            line-height: 60px;
+        }
+        & .wllcomeText {
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+        & .connectionText {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        & .inputWrapper {
+            margin-bottom: 16px;
+            & .inputIcon {
+                height: 20px;
+                left: 15px;
+            }
+            & .form-control {
+                font-size: 15px;
+                height: 52px;
+                padding-left: 50px;
+                border-radius: 14px;
+            }
+        }
+        & .checkboxWrapper {
+            & .form-check-input {
+                height: 18px;
+                width: 18px;
+                &:checked {
+                }
+            }
+            & .form-check-label {
+                font-size: 14px;
+            }
+        }
+        & .forgetLink {
+            font-size: 14px;
+        }
+        & .loginBtn {
+            height: 52px;
+            border-radius: 14px;
+            font-size: 22px;
+            margin: 25px 0 20px 0;
+        }
+        & .signInGoogle {
+            margin-bottom: 10px;
+            & span {
+                font-size: 16px;
+            }
+            & img {
+                height: 22px;
+            }
+        }
+        & .signInLink {
+            & span {
+                font-size: 16px;
+            }
+            & a {
+                font-size: 16px;
+                &:hover {
+                }
+            }
+        }
+    }
+}
+
+
+
+
