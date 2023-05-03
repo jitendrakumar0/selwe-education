@@ -1,8 +1,8 @@
 .contactUsPage {
     background-color: #f9f9f9;
-    background: url(../../assets/images/svg/contectUs/contactBg.jpg) no-repeat;
-    background-position: right;
-    background-size: contain;
+    // background: url(../../assets/images/svg/contectUs/contactBg.jpg) no-repeat;
+    // background-position: right;
+    // background-size: contain;
     overflow: hidden;
     & .innersection {
         position: relative;
@@ -47,27 +47,28 @@
                         color: #282828;
                         font-weight: 500;
                         font-size: 14px;
+                        background-color: transparent;
                         font-style: normal;
                         font-family: 'Montserrat';
                     }
                 }
             }
-            .submitBtn {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 30px;
-                line-height: 41px;
-                height: 60px;
-                color: #FFFFFF;
-                background: #008CBA;
-                border: 2px solid #008CBA;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 20px;
-                box-shadow: 4px 4px 15px -1px rgba(0,0,0,.521568627);
-                transition: 0.3s ease-in-out;
+            & .submitBtn {
+                // font-family: 'Montserrat';
+                // font-style: normal;
+                // font-weight: 700;
+                // font-size: 30px;
+                // line-height: 41px;
+                // height: 60px;
+                // color: #FFFFFF;
+                // background: #008CBA;
+                // border: 2px solid #008CBA;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // border-radius: 20px;
+                // box-shadow: 4px 4px 15px -1px rgba(0,0,0,.521568627);
+                // transition: 0.3s ease-in-out;
                 & img {
                     height: 20px;
                 }
@@ -75,6 +76,11 @@
                     background-color: darken(#008CBA, 5);
                 }
             }
+        }
+        & .rightside {
+            background: url(../../assets/images/svg/contectUs/contactBg.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     }
 }
@@ -107,9 +113,7 @@
                         }
                     }
                 }
-                .submitBtn {
-                    font-size: 28px;
-                    height: 58px;
+                & .submitBtn {
                     & img {
                         // height: 20px;
                     }
@@ -127,8 +131,6 @@
             &::before{
                 width: 300px;
                 height: 300px;
-                opacity: 0;
-                visibility: hidden;
             }
             & .leftSide {
                 & .contectsHeading {
@@ -149,9 +151,9 @@
                         }
                     }
                 }
-                .submitBtn {
-                    font-size: 25px;
-                    height: 50px;
+                & .submitBtn {
+                    // font-size: 25px;
+                    // height: 50px;
                     & img {
                         height: 18px;
                     }
@@ -192,9 +194,9 @@
                         }
                     }
                 }
-                .submitBtn {
-                    font-size: 20px;
-                    height: 48px;
+                & .submitBtn {
+                    // font-size: 20px;
+                    // height: 48px;
                     & img {
                         height: 16px;
                     }
@@ -231,9 +233,9 @@
                         }
                     }
                 }
-                .submitBtn {
-                    font-size: 18px;
-                    height: 45px;
+                & .submitBtn {
+                    // font-size: 18px;
+                    // height: 45px;
                     & img {
                         height: 16px;
                     }
