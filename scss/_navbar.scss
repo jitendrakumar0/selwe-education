@@ -24,14 +24,14 @@
             transition: all 0.3s ease-in-out;
             &:hover{
                 background: #008CBA;
-                box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
+                box-shadow: 4px 2px 12px 1px rgba(0,0,0,.25);
                 color: #FFFFFF;
             }
             &.active {
                 background: #008CBA;
                 font-size: 20.5916px;
                 line-height: 25px;
-                box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
+                box-shadow: 4px 2px 12px 1px rgba(0,0,0,.25);
                 color: #FFFFFF;
             }
         }
@@ -40,7 +40,7 @@
             background: #008cba;
             font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 13.3219px;
             line-height: 16px;
             box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
@@ -61,7 +61,7 @@
     & .offcanvas-header {
         background-color: #F8F8F8;
         & .offcanvas-title {
-            height: 25px;
+            height: 21px;
         }
     }
 }
@@ -146,10 +146,10 @@
     .navLinks {
         & .nav-item {
             & .nav-link {
-                font-size: 16px;
+                font-size: 14px;
                 height: 35px;
                 &.active {
-                    font-size: 15px;
+                    font-size: 14px;
                 }
             }
             .signInBtn {

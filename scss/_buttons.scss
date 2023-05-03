@@ -1,11 +1,12 @@
 
 .btnStyle {
-    height: 45.67px;
+    height: 42px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 18.1206px;
+    font-size: 16px;
     line-height: 22px;
+    padding: 0px 40px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -13,7 +14,7 @@
     background: #008cba;
     border: 1px solid #008cba;
     color: #ffffff;
-    box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
+    box-shadow: 4px 2px 12px 1px rgba(0,0,0,.25);
 
     &:hover {
         border-color: #282828;
@@ -27,7 +28,7 @@
         background: #008cba;
         border-color: #008cba;
         color: #ffffff;
-        box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
+        box-shadow: 4px 2px 12px 1px rgba(0,0,0,.25);
     }
     &:active{
         background: #008cba !important;
@@ -35,6 +36,8 @@
         color: #ffffff !important;
     }
 }
+
+
 
 
 @media screen and (max-width: 1399.98px) {
@@ -60,6 +63,9 @@
         font-size: 12px;
     }
 }
-@media screen and (max-width: 575.98px) {
-    
+@media screen and (max-width: 400px) {
+.btnStyle {
+    padding: 0px 30px;
+}
+
 }

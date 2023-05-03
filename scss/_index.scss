@@ -52,7 +52,7 @@
 // Features Section
 .featuresSection {
     padding-top: 71px;
-    padding-bottom: 100px;
+    // padding-bottom: 100px;
     margin-top: 100px;
     background: #008cba;
     &::before {
@@ -78,10 +78,10 @@
         & .featuresHeading {
             font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 700;
+            font-weight: 600;
             font-size: 83.1813px;
             line-height: 101px;
-            margin-bottom: 63px;
+            margin-bottom: 30px;
         }
         & .educationCard {
             & .card {
@@ -93,7 +93,7 @@
                     align-items: center;
                     justify-content: center;
                     position: relative;
-                    padding: 15%;
+                    padding: 18%;
                     &::before{
                         content: '';
                         margin: auto;
@@ -116,8 +116,8 @@
                         & .cardTitle {
                             font-family: 'Montserrat';
                             font-style: normal;
-                            font-weight: 500;
-                            font-size: 29.9116px;
+                            font-weight: 600;
+                            font-size: 26px;
                             line-height: 36px;
                             color: #ffffff;
                         }
@@ -158,10 +158,12 @@
                 align-items: center;
                 justify-content: center;
                 gap: 10px;
+                position: absolute;
+                bottom: 30px;
                 & .owl-dot {
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 12px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 10px;
                     opacity: 0.5;
                     background-color: #fff;
                     transition: all 0.3s;
@@ -176,12 +178,40 @@
 
 // Resserch Section
 .resserchSection {
+    overflow: hidden;
     & .innerFluid {
         & .innersection {
+            flex-wrap: nowrap;
+            overflow: auto hidden;
             & .searchCard {
-                box-shadow: 22px 0px 15px -16px rgba(51,51,51,.4509803922);
-                &:first-child {
-                    box-shadow: inset 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922), 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922);
+                    // box-shadow: 22px 0px 15px -16px rgba(51,51,51,.4509803922);
+                    box-shadow: none !important;
+                    position: relative;
+                    overflow: hidden;
+                    
+                    & .leftShadow {
+                        width: 1px;
+                        height: 85%;
+                        position: absolute;
+                        z-index: 0;
+                        left: -1px;
+                        background: transparent;
+                        top: 5%;
+                        transform: translateY(7.5%);
+                        // box-shadow: 19px 0px 12px -19px rgba(51,51,51,0.4509803922);
+                        box-shadow: 0px -15px 14px 4px rgba(51,51,51,0.4509803922);
+                    }
+                    &:first-child {
+                    // &::before{
+                    //     content: '';
+                    //     width: 10px;
+                    //     height: 100%;
+                    //     position: absolute;
+                    //     left: 0;
+                    //     top: 0;
+                    //     box-shadow: 19px 0px 12px -19px rgba(51,51,51,0.4509803922);
+                    // }
+                    // box-shadow: inset 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922), 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922);
                 }
                 &:last-child {
                     box-shadow: none;
@@ -192,25 +222,25 @@
                     &::before {
                         content: "";
                         position: absolute;
-                        left: 3px;
+                        left: 0px;
                         top: 50%;
                         z-index: 3;
-                        background: url(../../assets/images/svg/trengalShap.svg) no-repeat, center;
-                        background-size: cover;
-                        width: 123.37px;
-                        height: 178.23px;
-                        transform: translate(-50%, -50%);
+                        background: url(../../assets/images/svg/trengalShap2.svg) no-repeat, center;
+                        background-size: contain;
+                        width: 65px;
+                        height: 130px;
+                        transform: translate(0%, -50%);
                     }
                     &::after {
                         content: "";
                         position: absolute;
-                        right: -3px;
+                        right: 0px;
                         top: 50%;
-                        background: url(../../assets/images/svg/trengalShap.svg) no-repeat, center;
-                        background-size: cover;
-                        width: 123.37px;
-                        height: 178.23px;
-                        transform: translate(50%, -50%);
+                        background: url(../../assets/images/svg/trengalShap2.svg) no-repeat, center;
+                        background-size: contain;
+                        width: 65px;
+                        height: 130px;
+                        transform: translate(100%, -50%);
                     }
                     & .card-body {
                         transition: all 0.3s ease-in-out;
@@ -308,8 +338,8 @@
                     & .card {
                         &::before {
                             // display: none;
-                            opacity: 0;
-                            visibility: hidden;
+                            // opacity: 0;
+                            // visibility: hidden;
                             transition: all 0.3s;
                         }
                     }
@@ -343,7 +373,7 @@
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 700;
-            font-size: 93.8263px;
+            font-size: 85px;
             line-height: 114px;
             color: #282828;
             margin-bottom: 25px;
@@ -354,8 +384,8 @@
         & .subHeading {
             font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 500;
-            font-size: 26.599px;
+            font-weight: 600;
+            font-size: 24px;
             line-height: 32px;
             color: #282828;
         }
@@ -373,9 +403,9 @@
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 16.6703px;
+                        font-size: 16px;
                         line-height: 20px;
-                        color: #000000;
+                        color: #282828;
                     }
                 }
             }
@@ -385,17 +415,13 @@
 // Explaning Section
 .explainingSection {
     &::before {
-        // content: "";
-        // position: absolute;
-        // right: -175px;
-        // width: 337.33px;
-        // height: 337.33px;
-        // border-radius: 50%;
-        // background-color: #008cba;
-        // background-image: url(../../assets/images/svg/explainingBg.svg);
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // background-position: right;
+        content: "";
+        position: absolute;
+        right: -175px;
+        width: 337.33px;
+        height: 337.33px;
+        border-radius: 50%;
+        background-color: #008cba;
     }
     & .explaningImg {
         height: 112.07px;
@@ -435,7 +461,7 @@
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 700;
-            font-size: 128.716px;
+            font-size: 110px;
             line-height: 156px;
             color: #000000;
             margin-bottom: 170px;
@@ -457,8 +483,9 @@
             & .card {
                 background-color: #008cba;
                 min-height: 250px;
-                transition: all ease-in-out 0.3s;
                 & .card-body {
+                    transition: all ease-in-out 0.3s;
+                    position: relative;
                     & .momentImg {
                         height: 86px;
                         width: 100px;
@@ -484,7 +511,7 @@
                         transition: all ease-in-out 0.3s;
                     }
                     & .counters {
-                        font-weight: 500;
+                        font-weight: 600;
                         font-size: 55px;
                         line-height: 65px;
                     }
@@ -492,11 +519,10 @@
                         font-size: 40px;
                         line-height: 50px;
                     }
-                }
-                &:hover {
-                    background-color: #fff;
-                    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 20%);
-                    & .card-body {
+                    &:hover {
+                        z-index: 1;
+                        background-color: #fff;
+                        box-shadow: 4px 0px 15px 1px rgb(0 0 0 / 20%);
                         & .momentImg {
                             & .themeImg {
                                 opacity: 1;
@@ -525,7 +551,7 @@
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 700;
-            font-size: 163.954px;
+            font-size: 150px;
             line-height: 198px;
             color: #000000;
             & span {
@@ -576,8 +602,8 @@
                             & .clientText {
                                 font-family: 'Montserrat';
                                 font-style: normal;
-                                font-weight: 400;
-                                font-size: 29.5445px;
+                                font-weight: 500;
+                                font-size: 28px;
                                 line-height: 36px;
                                 margin: 36px 0px 72px 0px;
                             }
@@ -593,9 +619,9 @@
                 bottom: 26px;
                 gap: 10px;
                 & .owl-dot {
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 12px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 10px;
                     opacity: 0.5;
                     background-color: #fff;
                     transition: all 0.3s;
@@ -616,7 +642,7 @@
     padding-bottom: 400px;
     & .innerSection {
         & .logoImg {
-            height: 68px;
+            height: 50px;
             margin-bottom: 47px;
             & img {
                 // filter: grayscale(1);
@@ -626,7 +652,7 @@
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
-            font-size: 29.5445px;
+            font-size: 28px;
             line-height: 36px;
             color: #ffffff;
             margin-bottom: 68px;
@@ -685,7 +711,7 @@
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
-            font-size: 20.0008px;
+            font-size: 18px;
             line-height: 24px;
         }
     }
@@ -699,7 +725,7 @@
             & .contantSide {
                 & .card {
                     & .mainHeading {
-                        font-size: 57px;
+                        font-size: 55px;
                         line-height: normal;
                     }
                     & .pera {
@@ -728,8 +754,8 @@
                     & .card {
                         &::before,
                         &::after {
-                            width: 100px;
-                            height: 145.23px;
+                            width: 50px;
+                            height: 110px;
                         }
                         & .card-body {
                             &::before {
@@ -772,12 +798,39 @@
             }
         }
     }
+    // Simplify Section
+.simplifySection {
+    padding-top: 130px;
+    &::before {
+    }
+    & .innerSection {
+        & .simplifyHeading {
+            & span {
+            }
+        }
+        & .subHeading {
+            font-size: 21px;
+        }
+        & .experiencesCard {
+            & .innerBody {
+                & .brandCard {
+                }
+                & .cards {
+                    & .cardImg {
+                    }
+                    & .cradTitle {
+                    }
+                }
+            }
+        }
+    }
+}
     // why Choose Us Section
     .whyChooseUsSection {
         padding: 95px 0px 115px 0px;
         & .innerSection {
             & .whyChooseHeading {
-                font-size: 110px;
+                font-size: 100px;
                 line-height: 130px;
                 margin-bottom: 140px;
                 & span {
@@ -827,13 +880,95 @@
             }
         }
     }
+    // Testimonial Section
+    .testimonialSection {
+        & .innerSection {
+            & .clintSlider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item {
+                                & .userImg {
+                                    height: 240px;
+                                    width: 240px;
+                                    margin-top: -120px;
+                                }
+                                & .clientName {
+                                    font-size: 38px;
+                                    line-height: 50px;
+                                    margin: 34px 0px 12px 0px;
+                                }
+                                & .starts {
+                                    & ul {
+                                        & li {
+                                            height: 22px;
+                                        }
+                                    }
+                                }
+                                & .clientText {
+                                    font-size: 26px;
+                                    line-height: 34px;
+                                    margin: 34px 0px 68px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
     // Cross Section
     .crossSection {
         & .InnerSection {
             & .crossHeading {
-                font-size: 140px;
-                line-height: 160px;
+                font-size: 130px;
+                line-height: 150px;
                 & span {
+                }
+            }
+        }
+    }
+    // footerSection
+    .footerSection {
+        & .innerSection {
+            & .logoImg {
+                & img {
+                }
+            }
+            & .contant {
+                font-size: 27px;
+                line-height: 35px;
+            }
+            .footerButton {
+                & .btnStyle1 {
+                    &:hover {
+                    }
+                }
+                & .btnStyle2 {
+                    &:hover {
+                    }
+                }
+            }
+            & .footerIcon {
+                ul {
+                    & li {
+                        & .links {
+                        }
+                    }
+                }
+            }
+        }
+        & .socialIcon {
+            ul {
+                & li {
+                    & .links {
+                    }
                 }
             }
         }
@@ -848,7 +983,7 @@
             & .contantSide {
                 & .card {
                     & .mainHeading {
-                        font-size: 50px;
+                        font-size: 47px;
                         line-height: normal;
                         margin-bottom: 30px;
                     }
@@ -878,7 +1013,7 @@
     // featuresSection
     .featuresSection {
         padding-top: 50px;
-        padding-bottom: 80px;
+        // padding-bottom: 80px;
         margin-top: 80px;
         &::before {
         }
@@ -886,19 +1021,19 @@
         }
         & .innerSection {
             & .featuresHeading {
-                font-size: 70px;
+                font-size: 62px;
                 line-height: normal;
-                margin-bottom: 55px;
+                // margin-bottom: 55px;
             }
             & .educationCard {
                 & .card {
                     & .card-body {
                         & .innerBody {
                             & .cardImg {
-                                height: 70px;
+                                height: 60px;
                             }
                             & .cardTitle {
-                                font-size: 26px;
+                                font-size: 22px;
                                 line-height: normal;
                             }
                             & .cardSubTitle {
@@ -996,7 +1131,7 @@
                 }
             }
             & .subHeading {
-                font-size: 24px;
+                font-size: 20px;
                 line-height: normal;
             }
             & .experiencesCard {
@@ -1045,12 +1180,12 @@
     }
     // why Choose Us Section
     .whyChooseUsSection {
-        padding: 90px 0px 110px 0px;
+        padding: 90px 0px 90px 0px;
         & .innerSection {
             & .whyChooseHeading {
-                font-size: 100px;
-                line-height: 120px;
-                margin-bottom: 120px;
+                font-size: 90px;
+                line-height: 100px;
+                margin-bottom: 100px;
                 & span {
                     &::before {
                     }
@@ -1100,8 +1235,8 @@
     .crossSection {
         & .InnerSection {
             & .crossHeading {
-                font-size: 120px;
-                line-height: 140px;
+                font-size: 100px;
+                line-height: 130px;
                 & span {
                 }
             }
@@ -1117,26 +1252,22 @@
                         & .owl-item {
                             & .item {
                                 & .userImg {
-                                    height: 240px;
-                                    width: 240px;
-                                    margin-top: -120px;
                                 }
                                 & .clientName {
-                                    font-size: 38px;
-                                    line-height: 50px;
-                                    margin: 34px 0px 12px 0px;
+                                    font-size: 36px;
+                                    line-height: 46px;
+                                    margin: 33px 0px 11px 0px;
                                 }
                                 & .starts {
                                     & ul {
                                         & li {
-                                            height: 22px;
                                         }
                                     }
                                 }
                                 & .clientText {
-                                    font-size: 26px;
-                                    line-height: 34px;
-                                    margin: 34px 0px 68px 0px;
+                                    font-size: 22px;
+                                    line-height: 30px;
+                                    margin: 33px 0px 65px 0px;
                                 }
                             }
                         }
@@ -1157,7 +1288,7 @@
         padding-bottom: 360px;
         & .innerSection {
             & .logoImg {
-                height: 65px;
+                height: 45px;
                 margin-bottom: 42px;
             }
             & .contant {
@@ -1188,17 +1319,25 @@
             }
         }
     }
+        // copyWrightSection
+        .copyWrightSection {
+            & .innerSection {
+                & .copyRight {
+                    font-size: 17px;
+                }
+            }
+        }
 }
 @media screen and (max-width: 1199.98px) {
     // Hero Section
     .heroSection {
         padding-top: 70px;
-        padding-bottom: 70px;
+        // padding-bottom: 70px;
         & .innerSection {
             & .contantSide {
                 & .card {
                     & .mainHeading {
-                        font-size: 42px;
+                        font-size: 39px;
                         margin-bottom: 25px;
                     }
                     & .pera {
@@ -1226,7 +1365,7 @@
     // featuresSection
     .featuresSection {
         padding-top: 50px;
-        padding-bottom: 70px;
+        // padding-bottom: 70px;
         margin-top: 70px;
         &::before {
             top: -90px;
@@ -1238,7 +1377,7 @@
         & .innerSection {
             & .featuresHeading {
                 font-size: 55px;
-                margin-bottom: 40px;
+                // margin-bottom: 40px;
             }
             & .educationCard {
                 & .card {
@@ -1246,10 +1385,10 @@
                         border-radius: 55px;
                         & .innerBody {
                             & .cardImg {
-                                height: 60px;
+                                height: 50px;
                             }
                             & .cardTitle {
-                                font-size: 24px;
+                                font-size: 20px;
                             }
                             & .cardSubTitle {
                                 font-size: 13px;
@@ -1277,6 +1416,11 @@
         & .innerFluid {
             & .innersection {
                 & .searchCard {
+                    &:last-child {
+                    }
+                    &:nth-child(4){
+                        box-shadow: inset 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922), 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922);
+                    }
                     & .card {
                         &::before,
                         &::after {
@@ -1312,11 +1456,12 @@
                             }
                         }
                     }
-
                     &:nth-child(4) {
                         & .card {
                             &::before {
                                 display: block;
+                                opacity: 1;
+                                visibility: visible;
                             }
                         }
                     }
@@ -1340,7 +1485,7 @@
                 }
             }
             & .subHeading {
-                font-size: 20px;
+                font-size: 18px;
             }
             & .experiencesCard {
                 padding: 70px 0px 55px 0px;
@@ -1386,7 +1531,7 @@
     }
     // why Choose Us Section
     .whyChooseUsSection {
-        padding: 70px 0px 90px 0px;
+        padding: 70px 0px 80px 0px;
         & .innerSection {
             & .whyChooseHeading {
                 font-size: 80px;
@@ -1442,7 +1587,7 @@
     .crossSection {
         & .InnerSection {
             & .crossHeading {
-                font-size: 100px;
+                font-size: 95px;
                 line-height: normal;
                 & span {
                 }
@@ -1476,7 +1621,7 @@
                                     }
                                 }
                                 & .clientText {
-                                    font-size: 20px;
+                                    font-size: 18px;
                                     line-height: normal;
                                     margin: 32px 0px 65px 0px;
                                 }
@@ -1499,7 +1644,6 @@
         padding-bottom: 300px;
         & .innerSection {
             & .logoImg {
-                height: 58px;
                 margin-bottom: 38px;
             }
             & .contant {
@@ -1535,7 +1679,7 @@
     .copyWrightSection {
         & .innerSection {
             & .copyRight {
-                font-size: 18px;
+                font-size: 16px;
                 line-height: normal;
             }
         }
@@ -1551,7 +1695,7 @@
             & .contantSide {
                 & .card {
                     & .mainHeading {
-                        font-size: 31px;
+                        font-size: 29px;
                         margin-bottom: 22px;
                     }
                     & .pera {
@@ -1578,7 +1722,7 @@
     }
     // featuresSection
     .featuresSection {
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
         margin-top: 60px;
         &::before {
             top: -80px;
@@ -1590,17 +1734,17 @@
         & .innerSection {
             & .featuresHeading {
                 font-size: 45px;
-                margin-bottom: 35px;
+                margin-bottom: 0px;
             }
             & .educationCard {
                 & .card {
                     & .card-body {
                         & .innerBody {
                             & .cardImg {
-                                height: 45px;
+                                height: 40px;
                             }
                             & .cardTitle {
-                                font-size: 24px;
+                                font-size: 18px;
                             }
                             & .cardSubTitle {
                                 font-size: 13px;
@@ -1628,6 +1772,13 @@
         & .innerFluid {
             & .innersection {
                 & .searchCard {
+                    &:last-child {
+                        // box-shadow: inset 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922), 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922);
+                    box-shadow: -22px 0px 15px -16px rgba(51,51,51,.4509803922);
+                    }
+                    &:nth-child(3){
+                        box-shadow: inset 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922), 22px 0px 15px -16px rgba(51, 51, 51, 0.4509803922);
+                    }
                     & .card {
                         &::before,
                         &::after {
@@ -1637,16 +1788,17 @@
                             }
                             & .innerBody {
                                 & .cardImg {
-                                    height: 40px;
-                                    margin-bottom: 26px;
+                                    height: 35px;
+                                    margin-bottom: 23px;
                                     & img {
                                     }
                                 }
                                 & .cardTitle {
-                                    // font-size: 20px;
-                                    // margin-bottom: 16px;
+                                    font-size: 18px;
+                                    margin-bottom: 14px;
                                 }
                                 & .subContent {
+                                    font-size: 13px;
                                 }
                             }
                             &:hover {
@@ -1666,8 +1818,11 @@
                     &:nth-child(3),
                     &:last-child {
                         & .card {
+                            overflow: hidden;
                             &::before {
                                 display: block;
+                                // opacity: 1;
+                                // visibility: visible;
                             }
                         }
                     }
@@ -1690,7 +1845,7 @@
                 }
             }
             & .subHeading {
-                font-size: 18px;
+                font-size: 16px;
             }
             & .experiencesCard {
                 padding: 60px 0px 45px 0px;
@@ -1736,7 +1891,7 @@
     }
     // why Choose Us Section
     .whyChooseUsSection {
-        padding: 50px 0px 60px 0px;
+        padding: 50px 0px 50px 0px;
         & .innerSection {
             & .whyChooseHeading {
                 font-size: 45px;
@@ -1791,7 +1946,7 @@
     .crossSection {
         & .InnerSection {
             & .crossHeading {
-                font-size: 70px;
+                font-size: 55px;
                 & span {
                 }
             }
@@ -1823,7 +1978,7 @@
                                     }
                                 }
                                 & .clientText {
-                                    font-size: 18px;
+                                    font-size: 16px;
                                     margin: 26px 0px 60px 0px;
                                 }
                             }
@@ -1845,7 +2000,7 @@
         padding-bottom: 200px;
         & .innerSection {
             & .logoImg {
-                height: 45px;
+                height: 40px;
                 margin-bottom: 35px;
             }
             & .contant {
@@ -1887,7 +2042,7 @@
     .copyWrightSection {
         & .innerSection {
             & .copyRight {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
@@ -1928,7 +2083,7 @@
     }
     // featuresSection
     .featuresSection {
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         margin-top: 50px;
         &::before {
             top: -50px;
@@ -1941,7 +2096,6 @@
         & .innerSection {
             & .featuresHeading {
                 font-size: 32px;
-                margin-bottom: 30px;
             }
             & .educationCard {
                 & .card {
@@ -1950,13 +2104,13 @@
                         // min-height:;
                         & .innerBody {
                             & .cardImg {
-                                height: 45px;
+                                height: 35px;
                             }
                             & .cardTitle {
-                                font-size: 24px;
+                                font-size: 16px;
                             }
                             & .cardSubTitle {
-                                font-size: 13px;
+                                font-size: 12px;
                             }
                         }
                         &:hover {
@@ -1994,6 +2148,7 @@
                                     }
                                 }
                                 & .cardTitle {
+                                    font-size: 18px;
                                 }
                                 & .subContent {
                                 }
@@ -2036,7 +2191,7 @@
                 }
             }
             & .subHeading {
-                font-size: 16px;
+                font-size: 15px;
             }
             & .experiencesCard {
                 padding: 50px 0px 35px 0px;
@@ -2068,7 +2223,7 @@
         }
         & .explainingHeading,
         & .subHeading {
-            font-size: 32px;
+            font-size: 28px;
         }
         & .explainingHeading {
         }
@@ -2081,7 +2236,7 @@
     }
     // why Choose Us Section
     .whyChooseUsSection {
-        padding: 40px 0px 50px 0px;
+        padding: 40px 0px 40px 0px;
         & .innerSection {
             & .whyChooseHeading {
                 font-size: 32px;
@@ -2168,7 +2323,7 @@
                                     }
                                 }
                                 & .clientText {
-                                    font-size: 16px;
+                                    font-size: 15px;
                                     margin: 22px 0px 57px 0px;
                                 }
                             }
@@ -2190,7 +2345,7 @@
         padding-bottom: 150px;
         & .innerSection {
             & .logoImg {
-                height: 35px;
+                height: 32px;
                 margin-bottom: 30px;
             }
             & .contant {
@@ -2230,7 +2385,7 @@
         height: 50px;
         & .innerSection {
             & .copyRight {
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }
@@ -2239,7 +2394,7 @@
     // Hero Section
     .heroSection {
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
         & .innerSection {
             & .contantSide {
                 & .card {
@@ -2288,10 +2443,10 @@
                         border-radius: 40px;
                         & .innerBody {
                             & .cardImg {
-                                height: 40px;
+                                height: 30px;
                             }
                             & .cardTitle {
-                                font-size: 16px;
+                                font-size: 14px;
                             }
                             & .cardSubTitle {
                                 font-size: 10px;
@@ -2318,9 +2473,15 @@
     .resserchSection {
         & .innerFluid {
             & .innersection {
+                flex-wrap: wrap;
+                overflow: unset;
                 & .searchCard {
+                    box-shadow: none !important;
                     margin-bottom: 16px;
+                    overflow: unset;
+                    
                     & .card {
+                        box-shadow: 2px 2px 15px -1px rgba(0,0,0,.24) !important;
                         min-height: auto;
                         &::before,
                         &::after {
@@ -2336,20 +2497,30 @@
                                     }
                                 }
                                 & .cardTitle {
+                                    font-size: 16px;
                                     margin-bottom: 5px;
                                 }
                                 & .subContent {
+                                    font-size: 12px;
                                 }
                             }
-                            &:hover {
-                                &::before {
-                                }
-                                & .cardTitle,
-                                & .subContent {
-                                }
-                                & .cardImg {
-                                    & img {
-                                    }
+                        }
+                    }
+                    &:hover {
+                        & .card-body {
+                            box-shadow: none !important;
+                            &::before {
+                                width: 0% !important;
+                            }
+                            & .cardTitle,
+                            & .subContent {
+                                color: #404345 !important;
+                                transform: unset !important;
+                            }
+                            & .cardImg {
+                                & img {
+                                    filter: brightness(0) !important;
+                                    transform: unset !important;
                                 }
                             }
                         }
@@ -2404,7 +2575,7 @@
         }
         & .explainingHeading,
         & .subHeading {
-            font-size: 28px;
+            font-size: 22px;
         }
         & .explainingHeading {
         }
@@ -2417,7 +2588,7 @@
     }
     // why Choose Us Section
     .whyChooseUsSection {
-        padding: 30px 0px 40px 0px;
+        padding: 30px 0px 30px 0px;
         & .innerSection {
             & .whyChooseHeading {
                 font-size: 28px;
@@ -2565,32 +2736,113 @@
     .copyWrightSection {
         & .innerSection {
             & .copyRight {
-                font-size: 12px;
+                font-size: 10px;
             }
         }
     }
 }
 
-@media screen and (max-width: 350px) {
-// footerSection
-.footerSection {
+@media screen and (max-width: 500px) {
+// featuresSection
+.featuresSection {
+    &::before {
+    }
+    &::after {
+    }
     & .innerSection {
-        & .logoImg {
+        & .featuresHeading {
         }
-        & .contant {
-        }
-        .footerButton {
-            flex-direction: column;
-            & .btnStyle1 {
-                &:hover {
+        & .educationCard {
+            & .card {
+                & .card-body {
+                    &::before{
+                        border-radius: 30px;
+                    }
+                    & .innerBody {
+                        & .cardImg {
+                            height: 25px;
+                        }
+                        & .cardTitle {
+                            font-size: 12px;
+                        }
+                        & .cardSubTitle {
+                            font-size: 10px;
+                        }
+                    }
+                    &:hover {
+                    }
                 }
             }
-            & .btnStyle2 {
-                &:hover {
+        }
+        & .featuresCards {
+            & .owl-stage-outer {
+            }
+            & .owl-dots {
+                & .owl-dot {
+                    &.active {
+                    }
                 }
             }
         }
-        & .footerIcon {
+    }
+}
+}
+
+@media screen and (max-width: 400px) {
+    .mainHeading, .featuresHeading, .simplifyHeading , .whyChooseHeading {
+        font-size: 22px !important;
+    }
+    .crossHeading  {
+        font-size: 28px !important;
+    }
+    // Explaning Section
+    .explainingSection {
+        &::before {
+        }
+        & .explaningImg {
+        }
+        & .explainingHeading,
+        & .subHeading {
+            font-size: 18px;
+        }
+        & .explainingHeading {
+        }
+        & .subHeading {
+            &::before {
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 350px) {
+    // footerSection
+    .footerSection {
+        & .innerSection {
+            & .logoImg {
+            }
+            & .contant {
+            }
+            .footerButton {
+                flex-direction: column;
+                & .btnStyle1 {
+                    &:hover {
+                    }
+                }
+                & .btnStyle2 {
+                    &:hover {
+                    }
+                }
+            }
+            & .footerIcon {
+                ul {
+                    & li {
+                        & .links {
+                        }
+                    }
+                }
+            }
+        }
+        & .socialIcon {
             ul {
                 & li {
                     & .links {
@@ -2599,13 +2851,4 @@
             }
         }
     }
-    & .socialIcon {
-        ul {
-            & li {
-                & .links {
-                }
-            }
-        }
-    }
-}
 }

@@ -5,7 +5,7 @@ $('.featuresCards').owlCarousel({
     nav:false,
     responsive:{
         0:{
-            items:1
+            items:2
         },
         360:{
             items:2
@@ -14,9 +14,9 @@ $('.featuresCards').owlCarousel({
             items:3
         },
         992:{
-            items:3
+            items:4
         },
-        1400:{
+        1200:{
             items:4
         }
     }

@@ -1,0 +1,252 @@
+.contactUsPage {
+    background-color: #f9f9f9;
+    background: url(../../assets/images/svg/contectUs/contactBg.jpg) no-repeat;
+    background-position: right;
+    background-size: contain;
+    overflow: hidden;
+    & .innersection {
+        position: relative;
+        &::before{
+            content: '';
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-100%);
+            background: url(../../assets/images/svg/contectUs/arrowRound.png) no-repeat, center;
+            background-size: contain;
+        }
+        & .leftSide {
+            & .contectsHeading {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-size: 40px;
+                line-height: normal;
+                color: 282828;
+            }
+            & .inputGroup {
+                & .label {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: normal;
+                    color: 282828;
+                }
+                & .input-group {
+                    & .input-group-text{
+                        width: 40px;
+                        padding: 8px;
+                        & .iconImg {
+                            width: 100%;
+                        }
+                    }
+                    & .input-group-text, & .form-control {
+                        border-bottom: 2px solid #282828 !important;
+                        color: #282828;
+                        font-weight: 500;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-family: 'Montserrat';
+                    }
+                }
+            }
+            .submitBtn {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 41px;
+                height: 60px;
+                color: #FFFFFF;
+                background: #008CBA;
+                border: 2px solid #008CBA;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                box-shadow: 4px 4px 15px -1px rgba(0,0,0,.521568627);
+                transition: 0.3s ease-in-out;
+                & img {
+                    height: 20px;
+                }
+                &:hover {
+                    background-color: darken(#008CBA, 5);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1599px) {
+}
+@media (max-width: 1399px) {
+    .contactUsPage {
+        & .innersection {
+            &::before{
+                width: 350px;
+                height: 350px;
+            }
+            & .leftSide {
+                & .contectsHeading {
+                    font-size: 35px;
+                }
+                & .inputGroup {
+                    & .label {
+                        font-size: 13px;
+                    }
+                    & .input-group {
+                        & .input-group-text{
+                            width: 38px;
+                            & .iconImg {
+                            }
+                        }
+                        & .input-group-text, & .form-control {
+                            // font-size: 14px;
+                        }
+                    }
+                }
+                .submitBtn {
+                    font-size: 28px;
+                    height: 58px;
+                    & img {
+                        // height: 20px;
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width: 1199px) {
+    .contactUsPage {
+        & .innersection {
+            &::before{
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            & .leftSide {
+                & .contectsHeading {
+                    font-size: 32px;
+                }
+                & .inputGroup {
+                    & .label {
+                        // font-size: 13px;
+                    }
+                    & .input-group {
+                        & .input-group-text{
+                            width: 35px;
+                            & .iconImg {
+                            }
+                        }
+                        & .input-group-text, & .form-control {
+                            // font-size: 14px;
+                        }
+                    }
+                }
+                .submitBtn {
+                    font-size: 25px;
+                    height: 50px;
+                    & img {
+                        height: 18px;
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .contactUsPage {
+        background-image: none;
+        & .innersection {
+            &::before{
+                width: 300px;
+                height: 300px;
+                opacity: 1;
+                visibility: visible;
+                left: 100%;
+            }
+            & .leftSide {
+                & .contectsHeading {
+                    font-size: 28px;
+                }
+                & .inputGroup {
+                    & .label {
+                        font-size: 13px;
+                    }
+                    & .input-group {
+                        & .input-group-text{
+                            width: 35px;
+                            & .iconImg {
+                            }
+                        }
+                        & .input-group-text, & .form-control {
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .submitBtn {
+                    font-size: 20px;
+                    height: 48px;
+                    & img {
+                        height: 16px;
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .contactUsPage {
+        background-image: none;
+        & .innersection {
+            &::before{
+                display: none;
+                width: 250px;
+                height: 250px;
+            }
+            & .leftSide {
+                & .contectsHeading {
+                    font-size: 25px;
+                }
+                & .inputGroup {
+                    & .label {
+                    }
+                    & .input-group {
+                        & .input-group-text{
+                            width: 33px;
+                            & .iconImg {
+                            }
+                        }
+                        & .input-group-text, & .form-control {
+                        }
+                    }
+                }
+                .submitBtn {
+                    font-size: 18px;
+                    height: 45px;
+                    & img {
+                        height: 16px;
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+}
+
+
+
+
