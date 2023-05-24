@@ -1,3 +1,290 @@
+// ********* Button Scss **********
+
+.btnStyle {
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnStyle1 {
+    background: #008cba;
+    border: 1px solid #008cba;
+    color: #ffffff;
+    box-shadow: 4px 2px 12px 1px rgba(0,0,0,.25);
+
+    &:hover {
+        border-color: #282828;
+        color: #282828;
+    }
+}
+.btnStyle2 {
+    border: 1px solid #282828;
+    color: #282828;
+    &:hover {
+        background: #008cba;
+        border-color: #008cba;
+        color: #ffffff;
+        box-shadow: 4px 2px 12px 1px rgba(0,0,0,.25);
+    }
+    &:active{
+        background: #008cba !important;
+        border-color: #008cba !important;
+        color: #ffffff !important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1399.98px) {
+    .btnStyle {
+        height: 40px;
+        font-size: 16px;
+        line-height: normal;
+    }
+    
+}
+@media screen and (max-width: 1199.98px) {
+    .btnStyle {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    
+}
+@media screen and (max-width: 767.98px) {
+    .btnStyle {
+        height: 35px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+.btnStyle {
+    padding: 0px 30px;
+}
+
+}
+
+// ************** Header Scss ***************
+
+//  Header
+.headerSection {
+    height: 107px;
+    background-color: #F8F8F8;
+    // margin-top: 50px;
+    & .innerFluid {
+        & .navbar-brand {
+            height: 43px;
+        }
+    }
+}
+
+.navLinks{
+    & .nav-item {
+        & .nav-link {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22.2032px;
+            line-height: 27px;
+            color: #6e6e6e;
+            height: 53.72px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background: #008CBA;
+                box-shadow: 4px 2px 12px 1px rgba(0,0,0,.25);
+                color: #FFFFFF;
+            }
+            &.active {
+                background: #008CBA;
+                font-size: 20.5916px;
+                line-height: 25px;
+                box-shadow: 4px 2px 12px 1px rgba(0,0,0,.25);
+                color: #FFFFFF;
+            }
+        }
+        .signInBtn {
+            height: 49.01px;
+            background: #008cba;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13.3219px;
+            line-height: 16px;
+            box-shadow: 2px 2px 15px -1px rgb(0 0 0 / 24%);
+            color: #ffffff;
+            padding-right: 60px;
+            & .userImg {
+                width: 36.22px;
+                height: 36.22px;
+            }
+        }
+        
+    }
+}
+
+
+.headerOffcanvas {
+    width: 280px !important;
+    & .offcanvas-header {
+        background-color: #F8F8F8;
+        & .offcanvas-title {
+            height: 21px;
+        }
+    }
+}
+
+@media screen and (max-width: 1399.98px) {
+    .headerSection {
+        height: 90px;
+        & .innerFluid {
+            & .navbar-brand {
+                height: 40px;
+            }
+        }
+    }
+    .navLinks {
+        & .nav-item {
+            & .nav-link {
+                font-size: 20px;
+                line-height: normal;
+                height: 45px;
+                &:hover{
+                }
+                &.active {
+                    font-size: 19px;
+                    line-height: normal;
+                }
+            }
+            .signInBtn {
+                height: 40px;
+                font-size: 13px;
+                line-height: normal;
+                & .userImg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1199.98px) {
+    .headerSection {
+        height: 80px;
+        & .innerFluid {
+            & .navbar-brand {
+                height: 40px;
+            }
+        }
+    }
+    .navLinks {
+        & .nav-item {
+            & .nav-link {
+                font-size: 18px;
+                height: 40px;
+                &:hover{
+                }
+                &.active {
+                    font-size: 17px;
+                }
+            }
+            .signInBtn {
+                height: 35px;
+                font-size: 12px;
+                & .userImg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .headerSection {
+        height: 70px;
+        & .innerFluid {
+            & .navbar-brand {
+                height: 40px;
+            }
+        }
+    }
+    .navLinks {
+        & .nav-item {
+            & .nav-link {
+                font-size: 14px;
+                height: 35px;
+                &.active {
+                    font-size: 14px;
+                }
+            }
+            .signInBtn {
+                // height: 30px;
+                font-size: 11px;
+                & .userImg {
+                    // width: 20px;
+                    // height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .headerSection {
+        height: 60px;
+        & .innerFluid {
+            & .navbar-brand {
+                height: 32px;
+            }
+        }
+    }
+    .navLinks {
+        & .nav-item {
+            & .nav-link {
+                &.active {
+                }
+            }
+            .signInBtn {
+                & .userImg {
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 575.98px) {
+    .headerSection {
+        height: 55px;
+        & .innerFluid {
+            & .navbar-brand {
+            }
+        }
+    }
+    .navLinks {
+        & .nav-item {
+            & .nav-link {
+                &.active {
+                }
+            }
+            .signInBtn {
+                & .userImg {
+                }
+            }
+        }
+    }
+}
+
+
 // Hero Section
 .heroSection {
     padding-top: 100px;
@@ -2852,3 +3139,22 @@
         }
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .container{
+        max-width: 1520px;
+    }
+}
+
+body {
+    overflow: hidden auto;
+}
+.tooltip {
+    & .tooltip-inner {
+        font-weight: 600;
+    }
+}
+
+
+
+@import "fonts";

@@ -1,8 +1,5 @@
 .contactUsPage {
     background-color: #f9f9f9;
-    // background: url(../../assets/images/svg/contectUs/contactBg.jpg) no-repeat;
-    // background-position: right;
-    // background-size: contain;
     overflow: hidden;
     & .innersection {
         position: relative;
@@ -54,21 +51,6 @@
                 }
             }
             & .submitBtn {
-                // font-family: 'Montserrat';
-                // font-style: normal;
-                // font-weight: 700;
-                // font-size: 30px;
-                // line-height: 41px;
-                // height: 60px;
-                // color: #FFFFFF;
-                // background: #008CBA;
-                // border: 2px solid #008CBA;
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // border-radius: 20px;
-                // box-shadow: 4px 4px 15px -1px rgba(0,0,0,.521568627);
-                // transition: 0.3s ease-in-out;
                 & img {
                     height: 20px;
                 }
@@ -82,6 +64,30 @@
             background-position: center;
             background-size: cover;
         }
+    }
+}
+
+// *** login Button *****
+.loginBtn {
+    margin: 51px 0 37px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34.021px;
+    line-height: 41px;
+    color: #FFFFFF;
+    background: #008CBA;
+    border: 2px solid #008CBA;
+    width: 555.72px;
+    height:75.31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 4px 4px 15px -1px rgba(0,0,0,.521568627);
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background-color: darken(#008CBA, 5);
     }
 }
 
@@ -123,7 +129,12 @@
             }
         }
     }
-    
+    .loginBtn {
+        height: 68px;
+        width: 100%;
+        font-size: 30px;
+        margin: 42px 0 30px 0;
+    }
 }
 @media (max-width: 1199px) {
     .contactUsPage {
@@ -162,6 +173,9 @@
                 }
             }
         }
+    }
+    .loginBtn {
+        font-size: 29px;
     }
 }
 @media (max-width: 991px) {
@@ -206,6 +220,11 @@
             }
         }
     }
+    .loginBtn {
+        height: 64px;
+        font-size: 28px;
+        margin: 35px 0 25px 0;
+    }
 }
 @media (max-width: 767px) {
     .contactUsPage {
@@ -234,8 +253,6 @@
                     }
                 }
                 & .submitBtn {
-                    // font-size: 18px;
-                    // height: 45px;
                     & img {
                         height: 16px;
                     }
@@ -247,8 +264,25 @@
     }
 }
 @media (max-width: 575px) {
+    .loginBtn {
+        height: 52px;
+        border-radius: 14px;
+        font-size: 22px;
+        margin: 25px 0 20px 0;
+    }
 }
 
 
+@media screen and (min-width: 1600px) {
+    .container{
+        max-width: 1520px;
+    }
+}
+
+body {
+    overflow: hidden auto;
+}
+
+@import "fonts";
 
 
